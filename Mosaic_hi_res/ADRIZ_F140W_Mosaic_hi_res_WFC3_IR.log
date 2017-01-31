@@ -1,0 +1,2161 @@
+[INFO    ] Setting up logfile :  ADRIZ_F140W_Mosaic_hi_res_WFC3_IR.log
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.1.6(9-Aug-2016) started at: 12:32:37.697 (31/01/2017)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version 2.7.12 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:43:17) 
+[GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)]
+[INFO    ] numpy Version -> 1.11.1 
+[INFO    ] astropy Version -> 1.2.1 
+[INFO    ] stwcs Version -> 1.2.3.dev 
+[INFO    ] ==== Processing Step  Initialization  started at  12:32:37.752 (31/01/2017)
+[INFO    ] 
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: F140W_Mosaic_hi_res_WFC3_IR_drz.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0952708118571
+[INFO    ] Reading in MDRIZSKY of 0.211480815321
+[INFO    ] Reading in MDRIZSKY of 0.231527093651
+[INFO    ] Reading in MDRIZSKY of 0.471968692904
+[INFO    ] Reading in MDRIZSKY of 0.606488047397
+[INFO    ] Reading in MDRIZSKY of 0.275159922519
+[INFO    ] Reading in MDRIZSKY of 0.29366832127
+[INFO    ] Reading in MDRIZSKY of 0.427700754795
+[INFO    ] Reading in MDRIZSKY of 0.182360684955
+[INFO    ] Reading in MDRIZSKY of 0.192216993578
+[INFO    ] Reading in MDRIZSKY of 0.250219274829
+[INFO    ] Reading in MDRIZSKY of 0.253405031854
+[INFO    ] Reading in MDRIZSKY of 0.19068835296
+[INFO    ] Reading in MDRIZSKY of 0.28221275873
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01y7q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01y8q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01yaq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01ycq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01yeq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01ygq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr01yiq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr02p3q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr02p5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr03rqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr03rrq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr03rtq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr02p0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr02ozq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in icrr02p2q_flt.fits[DQ,1]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 251.77323338880225  -45.852475063153058
+[INFO    ] CRPIX : 1271.8125  1126.4625000000001
+[INFO    ] CD1_1 CD1_2  : -1.5034104190469354e-05  -7.1939897809136138e-06
+[INFO    ] CD2_1 CD2_2  : -7.1939897809136138e-06  1.5034104190469354e-05
+[INFO    ] NAXIS    : 2543 2252
+[INFO    ] 
+[INFO    ] ********************************************************************************
+[INFO    ] 
+[INFO    ] *
+[INFO    ] 
+[INFO    ] *  Estimated memory usage:  up to 73 Mb.
+[INFO    ] 
+[INFO    ] *  Output image size:       2543 X 2252 pixels. 
+[INFO    ] 
+[INFO    ] *  Output image file:       ~ 65 Mb. 
+[INFO    ] 
+[INFO    ] *  Cores available:         1
+[INFO    ] 
+[INFO    ] *
+[INFO    ] 
+[INFO    ] ********************************************************************************
+[INFO    ] 
+[INFO    ] ==== Processing Step  Initialization  finished at  12:32:46.844 (31/01/2017)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	True
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	True
+[INFO    ] 	input :	['icrr01y7q_flt.fits', 'icrr01y8q_flt.fits', 'icrr01yaq_flt.fits', 'icrr01ycq_flt.fits', 'icrr01yeq_flt.fits', 'icrr01ygq_flt.fits', 'icrr01yiq_flt.fits', 'icrr02p3q_flt.fits', 'icrr02p5q_flt.fits', 'icrr03rqq_flt.fits', 'icrr03rrq_flt.fits', 'icrr03rtq_flt.fits', 'icrr02p0q_flt.fits', 'icrr02ozq_flt.fits', 'icrr02p2q_flt.fits']
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	1
+[INFO    ] 	output :	F140W_Mosaic_hi_res_WFC3_IR
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	ADRIZ_F140W_Mosaic_hi_res_WFC3_IR
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  12:32:46.921 (31/01/2017)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.069781;   rms = 95.673279;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 11.852612;   rms = 97.245598;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.581246;   rms = 97.349556;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 10.583259;   rms = 96.333389;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 10.203564;   rms = 94.894157;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.420136;   rms = 94.149567;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.329746;   rms = 115.216751;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  9.546028;   rms = 98.095695;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 11.731334;   rms = 99.008469;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 15.478057;   rms = 97.445740;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 13.451502;   rms = 98.613754;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 13.258826;   rms = 99.816261;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.028393;   rms = 99.571365;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 12.931137;   rms = 97.405182;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 11.742538;   rms = 98.608704;   static_sig = 4.00
+[INFO    ] ==== Processing Step  Static Mask  finished at  12:32:48.088 (31/01/2017)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  12:32:48.09 (31/01/2017)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	match
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2017-01-31 12:32:49.040076
+[INFO    ]       Version 0.9.2 (05-August-2015)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01y7q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01y8q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01y8q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01yaq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01yaq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01ycq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01ycq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01yeq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01yeq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01ygq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01ygq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr01yiq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr01yiq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr02p3q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr02p3q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr02p5q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr02p5q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr03rqq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr03rqq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr03rrq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr03rrq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr03rtq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr03rtq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr02p0q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr02p0q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr02ozq_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr02ozq_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    **  Input image: 'icrr02p2q_flt.fits'
+[INFO    ] 
+[INFO    ]        EXT: 'SCI',1;	MASK: icrr02p2q_flt_in-memory_skymatch_mask[0]
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: icrr01y7q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01y8q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01yaq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01ycq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01yeq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01ygq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr01yiq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr02p3q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr02p5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr03rqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr03rrq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr03rtq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr02p0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr02ozq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[INFO    ]    *   Image: icrr02p2q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.7974343483
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/stsci.skypac-0.9.dev0-py2.7.egg/stsci/skypac/region.py:237: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  data[y+self._shifty][xstart:xend+1] = self._rid
+
+[INFO    ] 
+[INFO    ] -----  Computing differences in sky values in overlapping regions:  -----
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01y7q_flt.fits['SCI',1]' SKY = 0 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01y8q_flt.fits['SCI',1]' SKY = 5.79222 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0952708
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01yaq_flt.fits['SCI',1]' SKY = 12.8575 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.211481
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01ycq_flt.fits['SCI',1]' SKY = 14.0763 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.231527
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01yeq_flt.fits['SCI',1]' SKY = 28.6945 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.471969
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01ygq_flt.fits['SCI',1]' SKY = 36.8729 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.606488
+[INFO    ] 
+[INFO    ]    *   Image 'icrr01yiq_flt.fits['SCI',1]' SKY = 16.729 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.27516
+[INFO    ] 
+[INFO    ]    *   Image 'icrr02p3q_flt.fits['SCI',1]' SKY = 17.8543 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.293668
+[INFO    ] 
+[INFO    ]    *   Image 'icrr02p5q_flt.fits['SCI',1]' SKY = 26.0031 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.427701
+[INFO    ] 
+[INFO    ]    *   Image 'icrr03rqq_flt.fits['SCI',1]' SKY = 11.0871 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.182361
+[INFO    ] 
+[INFO    ]    *   Image 'icrr03rrq_flt.fits['SCI',1]' SKY = 11.6863 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.192217
+[INFO    ] 
+[INFO    ]    *   Image 'icrr03rtq_flt.fits['SCI',1]' SKY = 15.2127 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.250219
+[INFO    ] 
+[INFO    ]    *   Image 'icrr02p0q_flt.fits['SCI',1]' SKY = 15.4064 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.253405
+[INFO    ] 
+[INFO    ]    *   Image 'icrr02ozq_flt.fits['SCI',1]' SKY = 11.5934 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.190688
+[INFO    ] 
+[INFO    ]    *   Image 'icrr02p2q_flt.fits['SCI',1]' SKY = 17.1578 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.282213
+[INFO    ] 
+[INFO    ] ***** skymatch ended on 2017-01-31 12:33:20.478091
+[INFO    ] TOTAL RUN TIME: 0:00:31.438015
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  12:33:21.090 (31/01/2017)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  12:33:21.098 (31/01/2017)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=True as:
+{'pixfrac': 1.0, 'wt_scl': 'exptime', 'units': 'cps', 'kernel': 'turbo', 'wcskey': '', 'compress': False, 'stepsize': 10, 'build': True, 'fillval': None, 'coeffs': True, 'bits': 0}
+[INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
+[INFO    ] 	bits :	0
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	True
+[INFO    ] 	coeffs :	True
+[INFO    ] 	compress :	False
+[INFO    ] 	crbit :	None
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	turbo
+[INFO    ] 	num_cores :	1
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	electrons
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	None
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel turbo
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 251.77323338880225  -45.852475063153058
+[INFO    ] CRPIX : 595.0  527.0
+[INFO    ] CD1_1 CD1_2  : -3.2135397707128247e-05  -1.5377153156702851e-05
+[INFO    ] CD2_1 CD2_2  : -1.5377153156702851e-05  3.2135397707128247e-05
+[INFO    ] NAXIS    : 1190 1054
+[INFO    ] 
+[INFO    ] Executing serially
+[INFO    ] -Drizzle input: icrr01y7q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.000000 to icrr01y7q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01y7q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/astropy/io/fits/card.py:1249: VerifyWarning: Card is too long, comment will be truncated.
+  VerifyWarning)
+
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38807042439e-05 -3.38807042439e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46988245672e-05 -1.46988245672e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63433304407e-05 -1.63433304407e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02118826427e-05 3.02118826427e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38807042439e-05 -3.38807042439e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.46988245672e-05 -1.46988245672e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63433304407e-05 -1.63433304407e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02118826427e-05 3.02118826427e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/drizzlepac/outputimage.py:468: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if self.outweight and whtarr != None:
+
+[INFO    ] -Drizzle input: icrr01y8q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.095271 to icrr01y8q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01y8q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.771314153 251.771314153
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38804208702e-05 -3.38804208702e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46992185558e-05 -1.46992185558e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63437725299e-05 -1.63437725299e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02116282161e-05 3.02116282161e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.771313308 251.771313308
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.85228512 -45.85228512
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.85228512 -45.85228512
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.59893234203e-06 7.59893234203e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.42799175507e-06 1.42799175507e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38807097972e-05 -3.38807097972e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.46992694469e-05 -1.46992694469e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63438285353e-05 -1.63438285353e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02118861161e-05 3.02118861161e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr01yaq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.211481 to icrr01yaq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01yaq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.772465367 251.772465367
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38800552278e-05 -3.38800552278e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46996360939e-05 -1.46996360939e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63442412218e-05 -1.63442412218e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.0211300251e-05 3.0211300251e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.772463228 251.772463228
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8525111953 -45.8525111953
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8525111953 -45.8525111953
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 6.68961945394e-06 6.68961945394e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.43354913718e-06 1.43354913718e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38802368192e-05 -3.38802368192e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.4699599638e-05 -1.4699599638e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63441998082e-05 -1.63441998082e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02114625556e-05 3.02114625556e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr01ycq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.231527 to icrr01ycq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01ycq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.773616594 251.773616594
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8527399761 -45.8527399761
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8527399761 -45.8527399761
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38796741768e-05 -3.38796741768e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.47000072314e-05 -1.47000072314e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63446580657e-05 -1.63446580657e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02109586503e-05 3.02109586503e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.773613384 251.773613384
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8527376992 -45.8527376992
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8527376992 -45.8527376992
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 6.92534285918e-06 6.92534285918e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.42401022885e-06 1.42401022885e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38797688877e-05 -3.38797688877e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47002100348e-05 -1.47002100348e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63448848235e-05 -1.63448848235e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02110425567e-05 3.02110425567e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr01yeq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.471969 to icrr01yeq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01yeq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.774767837 251.774767837
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8529669136 -45.8529669136
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8529669136 -45.8529669136
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.3879299534e-05 -3.3879299534e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.47003609514e-05 -1.47003609514e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63450553254e-05 -1.63450553254e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02106228447e-05 3.02106228447e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.774763588 251.774763588
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8529632735 -45.8529632735
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8529632735 -45.8529632735
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 6.93898638815e-06 6.93898638815e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.66282801217e-06 1.66282801217e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38794421925e-05 -3.38794421925e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47004258096e-05 -1.47004258096e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63451274516e-05 -1.63451274516e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.0210750036e-05 3.0210750036e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr01ygq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.606488 to icrr01ygq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01ygq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.775919071 251.775919071
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8531938333 -45.8531938333
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8531938333 -45.8531938333
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38789532642e-05 -3.38789532642e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.47007270112e-05 -1.47007270112e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63454663397e-05 -1.63454663397e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02103123367e-05 3.02103123367e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.775914354 251.775914354
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8531898173 -45.8531898173
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8531898173 -45.8531898173
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.12457421059e-06 7.12457421059e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.53152812032e-06 1.53152812032e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38790571463e-05 -3.38790571463e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47007151066e-05 -1.47007151066e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63454526622e-05 -1.63454526622e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02104051732e-05 3.02104051732e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr01yiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.275160 to icrr01yiq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr01yiq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.777070333 251.777070333
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8534207428 -45.8534207428
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8534207428 -45.8534207428
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57247.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-13 2015-08-13
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38786340067e-05 -3.38786340067e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.47011646491e-05 -1.47011646491e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63459574161e-05 -1.63459574161e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02100257269e-05 3.02100257269e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.777065981 251.777065981
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8534161029 -45.8534161029
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8534161029 -45.8534161029
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.1266093471e-06 7.1266093471e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.68138547707e-06 1.68138547707e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38787604293e-05 -3.38787604293e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.4701195501e-05 -1.4701195501e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63459915463e-05 -1.63459915463e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02101385446e-05 3.02101385446e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr02p3q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.293668 to icrr02p3q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr02p3q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.773616594 251.773616594
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8527399761 -45.8527399761
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8527399761 -45.8527399761
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57250.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-16 2015-08-16
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38793452456e-05 -3.38793452456e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46998645119e-05 -1.46998645119e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63444993786e-05 -1.63444993786e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.0210665338e-05 3.0210665338e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.773543475 251.773543475
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8526792971 -45.8526792971
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8526792971 -45.8526792971
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 6.90559514283e-06 6.90559514283e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.62707959106e-06 1.62707959106e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38791500813e-05 -3.38791500813e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47009509537e-05 -1.47009509537e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63457164368e-05 -1.63457164368e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02104873654e-05 3.02104873654e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr02p5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.427701 to icrr02p5q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr02p5q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.774767837 251.774767837
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8529669136 -45.8529669136
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8529669136 -45.8529669136
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57250.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-16 2015-08-16
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38789634684e-05 -3.38789634684e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.47002151312e-05 -1.47002151312e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63448931907e-05 -1.63448931907e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02103231706e-05 3.02103231706e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.774695616 251.774695616
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8529053138 -45.8529053138
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8529053138 -45.8529053138
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.08429612928e-06 7.08429612928e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.6561888998e-06 1.6561888998e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.3878584114e-05 -3.3878584114e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47012510992e-05 -1.47012510992e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63460543375e-05 -1.63460543375e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02099808807e-05 3.02099808807e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr03rqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.182361 to icrr03rqq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr03rqq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57261.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-27 2015-08-27
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38807500237e-05 -3.38807500237e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46988444283e-05 -1.46988444283e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63433525239e-05 -1.63433525239e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02119234652e-05 3.02119234652e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.770080895 251.770080895
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8520173575 -45.8520173575
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8520173575 -45.8520173575
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 5.7440712169e-06 5.7440712169e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.4280198215e-06 1.4280198215e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38794913489e-05 -3.38794913489e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.4702367228e-05 -1.4702367228e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63473009375e-05 -1.63473009375e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02107874154e-05 3.02107874154e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr03rrq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.192217 to icrr03rrq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr03rrq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.771314153 251.771314153
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57261.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-27 2015-08-27
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.3879900297e-05 -3.3879900297e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46989927021e-05 -1.46989927021e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63435214076e-05 -1.63435214076e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.0211164014e-05 3.0211164014e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.771230339 251.771230339
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8522434224 -45.8522434224
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8522434224 -45.8522434224
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.56997053486e-06 7.56997053486e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.52353583616e-06 1.52353583616e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38784811867e-05 -3.38784811867e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47027566166e-05 -1.47027566166e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63477403241e-05 -1.63477403241e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02098838766e-05 3.02098838766e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr03rtq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.250219 to icrr03rtq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr03rtq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.772465367 251.772465367
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57261.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-27 2015-08-27
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38790445487e-05 -3.38790445487e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46991975877e-05 -1.46991975877e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63437536551e-05 -1.63437536551e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02103990148e-05 3.02103990148e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.772380162 251.772380162
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8524682999 -45.8524682999
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8524682999 -45.8524682999
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 6.75484395174e-06 6.75484395174e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.48390557797e-06 1.48390557797e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38772081269e-05 -3.38772081269e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47024991514e-05 -1.47024991514e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63474563339e-05 -1.63474563339e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02087476655e-05 3.02087476655e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr02p0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.253405 to icrr02p0q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr02p0q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.771314153 251.771314153
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.852286085 -45.852286085
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57250.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-16 2015-08-16
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38803404804e-05 -3.38803404804e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46991836783e-05 -1.46991836783e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63437337502e-05 -1.63437337502e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02115565315e-05 3.02115565315e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.771244242 251.771244242
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8522275637 -45.8522275637
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8522275637 -45.8522275637
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 5.755552138e-06 5.755552138e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.54021888932e-06 1.54021888932e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38800844871e-05 -3.38800844871e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47001409598e-05 -1.47001409598e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.6344806386e-05 -1.6344806386e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02113246707e-05 3.02113246707e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr02ozq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.190688 to icrr02ozq_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr02ozq_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57250.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-16 2015-08-16
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38807299612e-05 -3.38807299612e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46988357244e-05 -1.46988357244e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63433428462e-05 -1.63433428462e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02119055751e-05 3.02119055751e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.770094109 251.770094109
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8520021721 -45.8520021721
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8520021721 -45.8520021721
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.62632529927e-06 7.62632529927e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.12657922102e-06 1.12657922102e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38803375382e-05 -3.38803375382e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.46999462362e-05 -1.46999462362e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63445875166e-05 -1.63445875166e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02115513507e-05 3.02115513507e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] -Drizzle input: icrr02p2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.282213 to icrr02p2q_flt.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Generating simple FITS output: icrr02p2q_single_sci.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.772465367 251.772465367
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8525130369 -45.8525130369
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 MJD-OBS 57250.0
+[INFO    ] 
+[INFO    ] 		 DATE-OBS 2015-08-16 2015-08-16
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38798327079e-05 -3.38798327079e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46995395486e-05 -1.46995395486e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63441338749e-05 -1.63441338749e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.0211101827e-05 3.0211101827e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.772393978 251.772393978
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8524529212 -45.8524529212
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8524529212 -45.8524529212
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 CRDER1B 7.01840443185e-06 7.01840443185e-06
+[INFO    ] 
+[INFO    ] 		 CRDER2B 1.4660447647e-06 1.4660447647e-06
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38796765266e-05 -3.38796765266e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.47007479754e-05 -1.47007479754e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63454873548e-05 -1.63454873548e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02109582803e-05 3.02109582803e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  12:33:38.822 (31/01/2017)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  12:33:38.83 (31/01/2017)
+[INFO    ] 
+[INFO    ] Median combination step not performed.
+[INFO    ] ==== Processing Step  Blot  started at  12:33:38.858 (31/01/2017)
+[INFO    ] 
+[INFO    ] Blot step not performed.
+[INFO    ] ==== Processing Step  Blot  finished at  12:33:38.877 (31/01/2017)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  12:33:38.888 (31/01/2017)
+[INFO    ] 
+[INFO    ] Cosmic-ray identification (driz_cr) step not performed.
+[INFO    ] ==== Processing Step  Final Drizzle  started at  12:33:38.905 (31/01/2017)
+[INFO    ] 
+[INFO    ] Interpreted paramDict with single=False as:
+{'pixfrac': 0.65, 'kernel': 'square', 'units': 'cps', 'wcskey': '', 'maskval': None, 'wt_scl': 'exptime', 'stepsize': 10, 'build': True, 'fillval': None, 'coeffs': True, 'bits': 0, 'wht_type': 'EXP'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	0
+[INFO    ] 	build :	True
+[INFO    ] 	clean :	True
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	0.65
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'
+[INFO    ] CRVAL : 251.77323338880225  -45.852475063153058
+[INFO    ] CRPIX : 1271.8125  1126.4625000000001
+[INFO    ] CD1_1 CD1_2  : -1.5034104190469354e-05  -7.1939897809136138e-06
+[INFO    ] CD2_1 CD2_2  : -7.1939897809136138e-06  1.5034104190469354e-05
+[INFO    ] NAXIS    : 2543 2252
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/drizzlepac/adrizzle.py:699: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  here = _outsci==None and _outwht==None and _outctx==None
+
+[INFO    ] -Drizzle input: icrr01y7q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.000000 to icrr01y7q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01y8q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.095271 to icrr01y8q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01yaq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.211481 to icrr01yaq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01ycq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.231527 to icrr01ycq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01yeq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.471969 to icrr01yeq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01ygq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.606488 to icrr01ygq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr01yiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.275160 to icrr01yiq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr02p3q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.293668 to icrr02p3q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr02p5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.427701 to icrr02p5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr03rqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.182361 to icrr03rqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr03rrq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.192217 to icrr03rrq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr03rtq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.250219 to icrr03rtq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr02p0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.253405 to icrr02p0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: icrr02ozq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.190688 to icrr02ozq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[WARNING ] ! 16 points were outside the output image.
+[INFO    ] -Drizzle input: icrr02p2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.282213 to icrr02p2q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Found RULEFILE for  wfc3  of:  /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/fitsblender/wfc3_header.rules
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/fitsblender/blendheaders.py:377: AstropyDeprecationWarning: The new_table function is deprecated and may be removed in a future version.
+        Use :meth:`BinTableHDU.from_columns` for new BINARY tables or :meth:`TableHDU.from_columns` for new ASCII tables instead.
+  new_table = fits.new_table(newtab)
+
+[INFO    ] -Generating multi-extension output file:  F140W_Mosaic_hi_res_WFC3_IR_drz.fits
+[INFO    ] 
+[INFO    ] Wcskey 'O' is reserved for the original WCS and should not be deleted.
+[INFO    ] 
+[INFO    ] 		 WCSAXESA 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2A 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2A 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1A deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2A deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1A RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2A DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1A 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2A -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEA 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEA -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEA IDC_w3m18525i IDC_w3m18525i
+[INFO    ] 
+[INFO    ] 		 RADESYSA ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1A -3.38807042439e-05 -3.38807042439e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2A -1.46988245672e-05 -1.46988245672e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1A -1.63433304407e-05 -1.63433304407e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2A 3.02118826427e-05 3.02118826427e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key A in extensions [1]
+[INFO    ] 
+[INFO    ] 		 WCSAXESB 2 2
+[INFO    ] 
+[INFO    ] 		 CRPIX1B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CRPIX2B 507.0 507.0
+[INFO    ] 
+[INFO    ] 		 CDELT1B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CDELT2B 1.0 1.0
+[INFO    ] 
+[INFO    ] 		 CUNIT1B deg deg
+[INFO    ] 
+[INFO    ] 		 CUNIT2B deg deg
+[INFO    ] 
+[INFO    ] 		 CTYPE1B RA---TAN RA---TAN
+[INFO    ] 
+[INFO    ] 		 CTYPE2B DEC--TAN DEC--TAN
+[INFO    ] 
+[INFO    ] 		 CRVAL1B 251.770162945 251.770162945
+[INFO    ] 
+[INFO    ] 		 CRVAL2B -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 LONPOLEB 180.0 180.0
+[INFO    ] 
+[INFO    ] 		 LATPOLEB -45.8520591128 -45.8520591128
+[INFO    ] 
+[INFO    ] 		 WCSNAMEB TWEAK TWEAK
+[INFO    ] 
+[INFO    ] 		 RADESYSB ICRS ICRS
+[INFO    ] 
+[INFO    ] 		 CD1_1B -3.38807042439e-05 -3.38807042439e-05
+[INFO    ] 
+[INFO    ] 		 CD1_2B -1.46988245672e-05 -1.46988245672e-05
+[INFO    ] 
+[INFO    ] 		 CD2_1B -1.63433304407e-05 -1.63433304407e-05
+[INFO    ] 
+[INFO    ] 		 CD2_2B 3.02118826427e-05 3.02118826427e-05
+[INFO    ] 
+[INFO    ] Deleted all instances of WCS with key B in extensions [1]
+[INFO    ] 
+[INFO    ] Writing out to disk: F140W_Mosaic_hi_res_WFC3_IR_drz.fits
+[INFO    ] 
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  12:33:51.76 (31/01/2017)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.1.6 is finished processing at  12:33:51.778 (31/01/2017)!
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          9.0916 sec.
+[INFO    ] 
+[INFO    ]             Static Mask          1.1674 sec.
+[INFO    ] 
+[INFO    ]            Subtract Sky          32.9946 sec.
+[INFO    ] 
+[INFO    ]        Separate Drizzle          17.7237 sec.
+[INFO    ] 
+[INFO    ]           Create Median          0.0000 sec.
+[INFO    ] 
+[INFO    ]                    Blot          0.0193 sec.
+[INFO    ] 
+[INFO    ]                 Driz_CR          0.0000 sec.
+[INFO    ] 
+[INFO    ]           Final Drizzle          12.8610 sec.
+[INFO    ] 
+[INFO    ]    ====================          ====================
+[INFO    ] 
+[INFO    ]                   Total          73.8576 sec.
+[INFO    ] 
+[INFO    ] Removing intermediate files for icrr01y7q_flt.fits
+[INFO    ] Removing intermediate files for icrr01y8q_flt.fits
+[INFO    ] Removing intermediate files for icrr01yaq_flt.fits
+[INFO    ] Removing intermediate files for icrr01ycq_flt.fits
+[INFO    ] Removing intermediate files for icrr01yeq_flt.fits
+[INFO    ] Removing intermediate files for icrr01ygq_flt.fits
+[INFO    ] Removing intermediate files for icrr01yiq_flt.fits
+[INFO    ] Removing intermediate files for icrr02p3q_flt.fits
+[INFO    ] Removing intermediate files for icrr02p5q_flt.fits
+[INFO    ] Removing intermediate files for icrr03rqq_flt.fits
+[INFO    ] Removing intermediate files for icrr03rrq_flt.fits
+[INFO    ] Removing intermediate files for icrr03rtq_flt.fits
+[INFO    ] Removing intermediate files for icrr02p0q_flt.fits
+[INFO    ] Removing intermediate files for icrr02ozq_flt.fits
+[INFO    ] Removing intermediate files for icrr02p2q_flt.fits
+[INFO    ] Trailer file written to:  ADRIZ_F140W_Mosaic_hi_res_WFC3_IR
+[INFO    ] 

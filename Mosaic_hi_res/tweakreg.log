@@ -1,0 +1,2188 @@
+[INFO    ] Setting up logfile :  tweakreg.log
+[INFO    ] 
+[INFO    ] TweakReg Version 1.4.3(01-Jul-2016) started at: 12:20:46.544 (31/01/2017)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] 
+[INFO    ] --------------------
+[INFO    ] 
+[INFO    ] Python Version 2.7.12 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:43:17)
+[INFO    ] [GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)]
+[INFO    ] 
+[INFO    ] numpy Version -> 1.11.1 
+[INFO    ] 
+[INFO    ] astropy Version -> 1.2.1 
+[INFO    ] 
+[INFO    ] stwcs Version -> 1.2.3.dev 
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	clean :	True
+[INFO    ] 	enforce_user_order :	False
+[INFO    ] 	exclusions :	
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	input :	['icrr01y7q_flt.fits', 'icrr01y8q_flt.fits', 'icrr01yaq_flt.fits', 'icrr01ycq_flt.fits', 'icrr01yeq_flt.fits', 'icrr01ygq_flt.fits', 'icrr01yiq_flt.fits', 'icrr02ozq_flt.fits', 'icrr02p0q_flt.fits', 'icrr02p2q_flt.fits', 'icrr02p3q_flt.fits', 'icrr02p5q_flt.fits', 'icrr03rqq_flt.fits', 'icrr03rrq_flt.fits', 'icrr03rtq_flt.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	refimage :	icrr01y7q_flt.fits
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	verbose :	False
+[INFO    ] 	writecat :	True
+[INFO    ] 
+[INFO    ] Finding shifts for: 
+[INFO    ] 
+[INFO    ]     icrr01y7q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01y8q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01yaq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01ycq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01yeq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01ygq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr01yiq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr02ozq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr02p0q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr02p2q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr02p3q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr02p5q_flt.fits
+[INFO    ] 
+[INFO    ]     icrr03rqq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr03rrq_flt.fits
+[INFO    ] 
+[INFO    ]     icrr03rtq_flt.fits
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for finding sources for each input image:
+[INFO    ] 	clean :	True
+[INFO    ] 	computesig :	True
+[INFO    ] 	conv_width :	2.5
+[INFO    ] 	dqbits :	None
+[INFO    ] 	enforce_user_order :	False
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	fluxmax :	None
+[INFO    ] 	fluxmin :	None
+[INFO    ] 	input :	['icrr01y7q_flt.fits', 'icrr01y8q_flt.fits', 'icrr01yaq_flt.fits', 'icrr01ycq_flt.fits', 'icrr01yeq_flt.fits', 'icrr01ygq_flt.fits', 'icrr01yiq_flt.fits', 'icrr02ozq_flt.fits', 'icrr02p0q_flt.fits', 'icrr02p2q_flt.fits', 'icrr02p3q_flt.fits', 'icrr02p5q_flt.fits', 'icrr03rqq_flt.fits', 'icrr03rrq_flt.fits', 'icrr03rtq_flt.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	nsigma :	1.5
+[INFO    ] 	peakmax :	None
+[INFO    ] 	peakmin :	None
+[INFO    ] 	ratio :	1.0
+[INFO    ] 	refimage :	icrr01y7q_flt.fits
+[INFO    ] 	roundhi :	1.0
+[INFO    ] 	roundlo :	-1.0
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	sharphi :	1.0
+[INFO    ] 	sharplo :	0.2
+[INFO    ] 	skysigma :	0.0
+[INFO    ] 	theta :	0.0
+[INFO    ] 	threshold :	5.0
+[INFO    ] 	updatehdr :	True
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	use_sharp_round :	False
+[INFO    ] 	verbose :	False
+[INFO    ] 	writecat :	True
+[INFO    ] 	xyunits :	pixels
+[INFO    ] ===  Source finding for image 'icrr01y7q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01y7q_flt.fits', EXT=('SCI', 1) started at: 12:20:47.209 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.742283
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/numpy/core/fromnumeric.py:2652: VisibleDeprecationWarning: `rank` is deprecated; use the `ndim` attribute or function instead. To find the rank of a matrix see `numpy.linalg.matrix_rank`.
+  VisibleDeprecationWarning)
+
+[INFO    ] ###Source finding finished at: 12:20:47.725 (31/01/2017)
+[INFO    ]      Found 8025 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 8025 objects in image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01y8q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01y8q_flt.fits', EXT=('SCI', 1) started at: 12:20:48.116 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.741005
+[INFO    ] ###Source finding finished at: 12:20:48.632 (31/01/2017)
+[INFO    ]      Found 7962 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7962 objects in image 'icrr01y8q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01yaq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01yaq_flt.fits', EXT=('SCI', 1) started at: 12:20:49.061 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.689214
+[INFO    ] ###Source finding finished at: 12:20:49.57 (31/01/2017)
+[INFO    ]      Found 7945 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7945 objects in image 'icrr01yaq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01ycq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01ycq_flt.fits', EXT=('SCI', 1) started at: 12:20:49.965 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.717188
+[INFO    ] ###Source finding finished at: 12:20:50.453 (31/01/2017)
+[INFO    ]      Found 7895 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7895 objects in image 'icrr01ycq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01yeq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01yeq_flt.fits', EXT=('SCI', 1) started at: 12:20:50.871 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.783974
+[INFO    ] ###Source finding finished at: 12:20:51.370 (31/01/2017)
+[INFO    ]      Found 7864 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7864 objects in image 'icrr01yeq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01ygq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01ygq_flt.fits', EXT=('SCI', 1) started at: 12:20:51.794 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.123546
+[INFO    ] ###Source finding finished at: 12:20:52.298 (31/01/2017)
+[INFO    ]      Found 8197 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 8197 objects in image 'icrr01ygq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr01yiq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01yiq_flt.fits', EXT=('SCI', 1) started at: 12:20:52.795 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.071315
+[INFO    ] ###Source finding finished at: 12:20:53.307 (31/01/2017)
+[INFO    ]      Found 8287 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 8287 objects in image 'icrr01yiq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr02ozq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr02ozq_flt.fits', EXT=('SCI', 1) started at: 12:20:53.857 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.775909
+[INFO    ] ###Source finding finished at: 12:20:54.314 (31/01/2017)
+[INFO    ]      Found 7983 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7983 objects in image 'icrr02ozq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr02p0q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr02p0q_flt.fits', EXT=('SCI', 1) started at: 12:20:54.834 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.779380
+[INFO    ] ###Source finding finished at: 12:20:55.288 (31/01/2017)
+[INFO    ]      Found 7922 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7922 objects in image 'icrr02p0q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr02p2q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr02p2q_flt.fits', EXT=('SCI', 1) started at: 12:20:55.713 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.773376
+[INFO    ] ###Source finding finished at: 12:20:56.177 (31/01/2017)
+[INFO    ]      Found 7903 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7903 objects in image 'icrr02p2q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr02p3q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr02p3q_flt.fits', EXT=('SCI', 1) started at: 12:20:56.634 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.704553
+[INFO    ] ###Source finding finished at: 12:20:57.12 (31/01/2017)
+[INFO    ]      Found 7915 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7915 objects in image 'icrr02p3q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr02p5q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr02p5q_flt.fits', EXT=('SCI', 1) started at: 12:20:57.576 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.776511
+[INFO    ] ###Source finding finished at: 12:20:58.044 (31/01/2017)
+[INFO    ]      Found 7878 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7878 objects in image 'icrr02p5q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr03rqq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr03rqq_flt.fits', EXT=('SCI', 1) started at: 12:20:58.491 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.780112
+[INFO    ] ###Source finding finished at: 12:20:58.967 (31/01/2017)
+[INFO    ]      Found 7995 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7995 objects in image 'icrr03rqq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr03rrq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr03rrq_flt.fits', EXT=('SCI', 1) started at: 12:20:59.352 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.730072
+[INFO    ] ###Source finding finished at: 12:20:59.820 (31/01/2017)
+[INFO    ]      Found 7918 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7918 objects in image 'icrr03rrq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ===  Source finding for image 'icrr03rtq_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr03rtq_flt.fits', EXT=('SCI', 1) started at: 12:21:00.224 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.747484
+[INFO    ] ###Source finding finished at: 12:21:00.712 (31/01/2017)
+[INFO    ]      Found 7963 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 7963 objects in image 'icrr03rtq_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for finding sources for the reference image:
+[INFO    ] 	clean :	True
+[INFO    ] 	computesig :	True
+[INFO    ] 	conv_width :	2.5
+[INFO    ] 	dqbits :	None
+[INFO    ] 	enforce_user_order :	False
+[INFO    ] 	expand_refcat :	False
+[INFO    ] 	fluxmax :	None
+[INFO    ] 	fluxmin :	None
+[INFO    ] 	input :	['icrr01y7q_flt.fits', 'icrr01y8q_flt.fits', 'icrr01yaq_flt.fits', 'icrr01ycq_flt.fits', 'icrr01yeq_flt.fits', 'icrr01ygq_flt.fits', 'icrr01yiq_flt.fits', 'icrr02ozq_flt.fits', 'icrr02p0q_flt.fits', 'icrr02p2q_flt.fits', 'icrr02p3q_flt.fits', 'icrr02p5q_flt.fits', 'icrr03rqq_flt.fits', 'icrr03rrq_flt.fits', 'icrr03rtq_flt.fits']
+[INFO    ] 	interactive :	False
+[INFO    ] 	nsigma :	1.5
+[INFO    ] 	peakmax :	None
+[INFO    ] 	peakmin :	None
+[INFO    ] 	ratio :	1.0
+[INFO    ] 	refimage :	icrr01y7q_flt.fits
+[INFO    ] 	roundhi :	1.0
+[INFO    ] 	roundlo :	-1.0
+[INFO    ] 	runfile :	tweakreg.log
+[INFO    ] 	sharphi :	1.0
+[INFO    ] 	sharplo :	0.2
+[INFO    ] 	skysigma :	0.0
+[INFO    ] 	theta :	0.0
+[INFO    ] 	threshold :	5.0
+[INFO    ] 	updatehdr :	False
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	use_sharp_round :	False
+[INFO    ] 	verbose :	False
+[INFO    ] 	writecat :	True
+[INFO    ] 	xyunits :	pixels
+[INFO    ] ===  Source finding for image 'icrr01y7q_flt.fits':
+[INFO    ] 
+[INFO    ]   #  Source finding for 'icrr01y7q_flt.fits', EXT=('SCI', 1) started at: 12:21:01.303 (31/01/2017)
+[INFO    ] 
+[INFO    ]    Finding sources using sky sigma = 4.742283
+[INFO    ] ###Source finding finished at: 12:21:01.760 (31/01/2017)
+[INFO    ]      Found 8025 objects.
+[INFO    ] 
+[INFO    ] ===  Found a TOTAL of 8025 objects in image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] 
+[WARNING ] 
+Reference image contains a distorted WCS.
+Using the undistorted version of this WCS.
+
+[INFO    ]  Catalog trimmed to 8025 objects
+[INFO    ] 
+[INFO    ] Converting RA/Dec positions of reference sources from "icrr01y7q_flt.fits" to X,Y positions in reference WCS...
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Aligning all input images to WCS defined by icrr01y7q_flt.fits
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS for matching sources:
+[INFO    ] 	minobj :	3
+[INFO    ] 	residplot :	both
+[INFO    ] 	searchrad :	15.0
+[INFO    ] 	searchunits :	arcseconds
+[INFO    ] 	see2dplot :	True
+[INFO    ] 	separation :	0.0
+[INFO    ] 	tolerance :	1.0
+[INFO    ] 	use2dhist :	True
+[INFO    ] 	xoffset :	0.0
+[INFO    ] 	yoffset :	0.0
+[INFO    ] USER INPUT PARAMETERS for fitting source lists:
+[INFO    ] 	fitgeometry :	rscale
+[INFO    ] 	labelsize :	8
+[INFO    ] 	minobj :	3
+[INFO    ] 	nclip :	3
+[INFO    ] 	residplot :	both
+[INFO    ] 	sigma :	3.0
+[INFO    ] 	ylimit :	None
+[INFO    ] USER INPUT PARAMETERS for creating a shiftfile:
+[INFO    ] 	outshifts :	ir_shifts.txt
+[INFO    ] 	outwcs :	shifts_wcs.fits
+[INFO    ] 	shiftfile :	True
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01y7q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01y7q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] NO fit performed for reference image: icrr01y7q_flt.fits
+
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/astropy/wcs/wcs.py:2555: AstropyWarning: Some non-standard WCS keywords were excluded: A_3_1, A_3_0, B_3_0, B_3_1, B_1_2, B_1_3, B_1_1, B_2_1, B_2_0, B_2_2, B_ORDER, A_ORDER, B_0_4, B_0_3, B_0_2, A_4_0, B_4_0, A_1_1, A_1_3, A_1_2, A_0_4, A_0_2, A_0_3, A_2_2, A_2_0, A_2_1 Use the ``relax`` kwarg to control this.
+  AstropyWarning)
+
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/stwcs/wcsutil/wcscorr.py:547: AstropyDeprecationWarning: The new_table function is deprecated and may be removed in a future version.
+        Use :meth:`BinTableHDU.from_columns` for new BINARY tables or :meth:`TableHDU.from_columns` for new ASCII tables instead.
+  newtab = fits.new_table(fits.ColDefs(col_list), nrows=trows)
+
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/astropy/io/fits/card.py:521: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+  keyword, VerifyWarning)
+
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01y8q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01y8q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.621022196135 -0.783599643471
+[INFO    ] 
+[INFO    ]     with significance of  25731.2500542 and  2955.0  matches
+[INFO    ] 
+[INFO    ] Found 5765 matches for icrr01y8q_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01y8q_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.00332677  YSH: -0.0317955    ROT: 0.000113769    SCALE: 0.999992
+[INFO    ] 
+[INFO    ] XRMS: 0.116715    YRMS: 0.100286
+[INFO    ] 
+[INFO    ] RMS_RA: 7.59893e-06 (deg)   RMS_DEC: 1.42799e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4890  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01y8q_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01y8q_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4890
+[INFO    ] 
+[INFO    ] # of points after clipping:  4890
+[INFO    ] 
+[INFO    ] Total # points:  4890
+[INFO    ] 
+[INFO    ] # of points after clipping:  4890
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01y8q_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01y8q_flt.fits['SCI',1]
+[INFO    ] 
+[WARNING ] /Users/vbajaj/anaconda2/envs/astroconda/lib/python2.7/site-packages/drizzlepac/updatehdr.py:321: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  a = inv[0.0]
+
+[INFO    ] Updating header for icrr01y8q_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3880709797194024e-05 -1.4699269446943943e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6343828535331657e-05 3.0211886116091242e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77131330761526 -45.852285119977807
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541943572585807
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.944741598147942
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01y8q_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01y8q_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01yaq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01yaq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.694986901643 -0.840663120849
+[INFO    ] 
+[INFO    ]     with significance of  28620.3727733 and  3710.0  matches
+[INFO    ] 
+[INFO    ] Found 5721 matches for icrr01yaq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01yaq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.0154417  YSH: -0.0649567    ROT: 0.000175445    SCALE: 0.999996
+[INFO    ] 
+[INFO    ] XRMS: 0.10061    YRMS: 0.0927529
+[INFO    ] 
+[INFO    ] RMS_RA: 6.68962e-06 (deg)   RMS_DEC: 1.43355e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4885  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01yaq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01yaq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4885
+[INFO    ] 
+[INFO    ] # of points after clipping:  4885
+[INFO    ] 
+[INFO    ] Total # points:  4885
+[INFO    ] 
+[INFO    ] # of points after clipping:  4885
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01yaq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01yaq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr01yaq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3880236819177388e-05 -1.4699599638048001e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6344199808233081e-05 3.0211462555645407e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77246322762502 -45.85251119527063
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541898326717
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.945563953872327
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01yaq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01yaq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01ycq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01ycq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.740768292935 -0.854365989571
+[INFO    ] 
+[INFO    ]     with significance of  29680.2979015 and  3853.0  matches
+[INFO    ] 
+[INFO    ] Found 5456 matches for icrr01ycq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01ycq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.0295358  YSH: -0.084771    ROT: 360    SCALE: 0.999995
+[INFO    ] 
+[INFO    ] XRMS: 0.104883    YRMS: 0.0945006
+[INFO    ] 
+[INFO    ] RMS_RA: 6.92534e-06 (deg)   RMS_DEC: 1.42401e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4659  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01ycq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01ycq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4659
+[INFO    ] 
+[INFO    ] # of points after clipping:  4659
+[INFO    ] 
+[INFO    ] Total # points:  4659
+[INFO    ] 
+[INFO    ] # of points after clipping:  4659
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01ycq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01ycq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr01ycq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879768887685385e-05 -1.4700210034806818e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6344884823478841e-05 3.0211042556720615e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77361338372364 -45.852737699190733
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541839977684766
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.946813347152418
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01ycq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01ycq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01yeq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01yeq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.737840823327 -0.894937684072
+[INFO    ] 
+[INFO    ]     with significance of  29832.7799708 and  3869.0  matches
+[INFO    ] 
+[INFO    ] Found 5338 matches for icrr01yeq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01yeq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.0311444  YSH: -0.128321    ROT: 360    SCALE: 0.999996
+[INFO    ] 
+[INFO    ] XRMS: 0.10223    YRMS: 0.100663
+[INFO    ] 
+[INFO    ] RMS_RA: 6.93899e-06 (deg)   RMS_DEC: 1.66283e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4540  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01yeq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01yeq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4540
+[INFO    ] 
+[INFO    ] # of points after clipping:  4540
+[INFO    ] 
+[INFO    ] Total # points:  4540
+[INFO    ] 
+[INFO    ] # of points after clipping:  4540
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01yeq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01yeq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr01yeq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879442192532142e-05 -1.4700425809644831e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6345127451550677e-05 3.0210750035993024e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77476358828264 -45.852963273459928
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541780645727761
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.947362495421011
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01yeq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01yeq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01ygq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01ygq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.744571973167 -0.888393436178
+[INFO    ] 
+[INFO    ]     with significance of  29473.8546899 and  3756.0  matches
+[INFO    ] 
+[INFO    ] Found 5126 matches for icrr01ygq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01ygq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.0345909  YSH: -0.141826    ROT: 8.41431e-05    SCALE: 0.999998
+[INFO    ] 
+[INFO    ] XRMS: 0.107094    YRMS: 0.0989044
+[INFO    ] 
+[INFO    ] RMS_RA: 7.12457e-06 (deg)   RMS_DEC: 1.53153e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4368  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01ygq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01ygq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4368
+[INFO    ] 
+[INFO    ] # of points after clipping:  4368
+[INFO    ] 
+[INFO    ] Total # points:  4368
+[INFO    ] 
+[INFO    ] # of points after clipping:  4368
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01ygq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01ygq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr01ygq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879057146340657e-05 -1.4700715106646534e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6345452662236403e-05 3.0210405173212917e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77591435416775 -45.853189817266191
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.1354173266757327
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.948063449144861
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01ygq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01ygq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr01yiq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr01yiq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.711720927038 -0.893907727933
+[INFO    ] 
+[INFO    ]     with significance of  28134.3668073 and  3506.0  matches
+[INFO    ] 
+[INFO    ] Found 5002 matches for icrr01yiq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr01yiq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.0208247  YSH: -0.154622    ROT: 3.37387e-05    SCALE: 0.999997
+[INFO    ] 
+[INFO    ] XRMS: 0.105314    YRMS: 0.102716
+[INFO    ] 
+[INFO    ] RMS_RA: 7.12661e-06 (deg)   RMS_DEC: 1.68139e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4230  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr01yiq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr01yiq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4230
+[INFO    ] 
+[INFO    ] # of points after clipping:  4230
+[INFO    ] 
+[INFO    ] Total # points:  4230
+[INFO    ] 
+[INFO    ] # of points after clipping:  4230
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr01yiq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr01yiq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr01yiq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3878760429278001e-05 -1.470119550101172e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.634599154630992e-05 3.021013854457113e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77706598093891 -45.853416102869225
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541705975059395
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.948999068178203
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr01yiq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr01yiq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr02ozq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr02ozq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.955608243586 -2.75217599475
+[INFO    ] 
+[INFO    ]     with significance of  33631.8598747 and  4686.0  matches
+[INFO    ] 
+[INFO    ] Found 6011 matches for icrr02ozq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr02ozq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.524349  YSH: -2.02265    ROT: 359.998    SCALE: 0.999995
+[INFO    ] 
+[INFO    ] XRMS: 0.12085    YRMS: 0.0928852
+[INFO    ] 
+[INFO    ] RMS_RA: 7.62633e-06 (deg)   RMS_DEC: 1.12658e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  5073  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr02ozq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr02ozq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  5073
+[INFO    ] 
+[INFO    ] # of points after clipping:  5073
+[INFO    ] 
+[INFO    ] Total # points:  5073
+[INFO    ] 
+[INFO    ] # of points after clipping:  5073
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr02ozq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr02ozq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr02ozq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3880337538242678e-05 -1.4699946236202319e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6344587516633198e-05 3.0211551350651033e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77009410853114 -45.852002172129879
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541976586314186
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.946029194591752
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr02ozq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr02ozq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr02p0q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr02p0q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.963126454128 -2.87531283406
+[INFO    ] 
+[INFO    ]     with significance of  40094.8081912 and  5419.0  matches
+[INFO    ] 
+[INFO    ] Found 6140 matches for icrr02p0q_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr02p0q_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.524638  YSH: -2.07134    ROT: 359.998    SCALE: 0.999994
+[INFO    ] 
+[INFO    ] XRMS: 0.0828445    YRMS: 0.0875711
+[INFO    ] 
+[INFO    ] RMS_RA: 5.75555e-06 (deg)   RMS_DEC: 1.54022e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  5261  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr02p0q_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr02p0q_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  5261
+[INFO    ] 
+[INFO    ] # of points after clipping:  5261
+[INFO    ] 
+[INFO    ] Total # points:  5261
+[INFO    ] 
+[INFO    ] # of points after clipping:  5261
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr02p0q_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr02p0q_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr02p0q_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3880084487119897e-05 -1.4700140959772795e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6344806385997084e-05 3.0211324670696892e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77124424230902 -45.852227563715779
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541911440941048
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.946496925830118
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr02p0q_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr02p0q_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr02p2q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr02p2q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.967817609966 -2.88328591058
+[INFO    ] 
+[INFO    ]     with significance of  38700.335069 and  5112.0  matches
+[INFO    ] 
+[INFO    ] Found 5725 matches for icrr02p2q_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr02p2q_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.532337  YSH: -2.12378    ROT: 359.998    SCALE: 0.999988
+[INFO    ] 
+[INFO    ] XRMS: 0.106015    YRMS: 0.0963503
+[INFO    ] 
+[INFO    ] RMS_RA: 7.0184e-06 (deg)   RMS_DEC: 1.46604e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4851  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr02p2q_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr02p2q_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4851
+[INFO    ] 
+[INFO    ] # of points after clipping:  4851
+[INFO    ] 
+[INFO    ] Total # points:  4851
+[INFO    ] 
+[INFO    ] # of points after clipping:  4851
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr02p2q_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr02p2q_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr02p2q_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879676526566923e-05 -1.4700747975380167e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6345487354844127e-05 3.0210958280325067e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77239397793477 -45.852452921211118
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541809385248221
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.947701131884312
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr02p2q_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr02p2q_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr02p3q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr02p3q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.959321529131 -2.90608078839
+[INFO    ] 
+[INFO    ]     with significance of  39612.2398822 and  5098.0  matches
+[INFO    ] 
+[INFO    ] Found 5592 matches for icrr02p3q_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr02p3q_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.55644  YSH: -2.15223    ROT: 359.998    SCALE: 0.999991
+[INFO    ] 
+[INFO    ] XRMS: 0.102075    YRMS: 0.0994758
+[INFO    ] 
+[INFO    ] RMS_RA: 6.9056e-06 (deg)   RMS_DEC: 1.62708e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4739  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr02p3q_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr02p3q_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4739
+[INFO    ] 
+[INFO    ] # of points after clipping:  4739
+[INFO    ] 
+[INFO    ] Total # points:  4739
+[INFO    ] 
+[INFO    ] # of points after clipping:  4739
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr02p3q_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr02p3q_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr02p3q_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879150081328901e-05 -1.4700950953652928e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6345716436823404e-05 3.0210487365386645e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77354347537442 -45.852679297121789
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541708502585795
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.948363776160548
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr02p3q_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr02p3q_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr02p5q_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr02p5q_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -0.957600198642 -2.89437645313
+[INFO    ] 
+[INFO    ]     with significance of  38242.6016424 and  4860.0  matches
+[INFO    ] 
+[INFO    ] Found 5381 matches for icrr02p5q_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr02p5q_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.529777  YSH: -2.16715    ROT: 359.998    SCALE: 0.999996
+[INFO    ] 
+[INFO    ] XRMS: 0.104873    YRMS: 0.101721
+[INFO    ] 
+[INFO    ] RMS_RA: 7.0843e-06 (deg)   RMS_DEC: 1.65619e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4552  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr02p5q_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr02p5q_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4552
+[INFO    ] 
+[INFO    ] # of points after clipping:  4552
+[INFO    ] 
+[INFO    ] Total # points:  4552
+[INFO    ] 
+[INFO    ] # of points after clipping:  4552
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr02p5q_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr02p5q_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr02p5q_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3878584113957096e-05 -1.4701251099197289e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.634605433753007e-05 3.0209980880748944e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77469561591047 -45.85290531380592
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541646318114467
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.949201977303058
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr02p5q_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr02p5q_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr03rqq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr03rqq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -1.33125340504 -2.03214831096
+[INFO    ] 
+[INFO    ]     with significance of  28104.0868052 and  3603.0  matches
+[INFO    ] 
+[INFO    ] Found 6425 matches for icrr03rqq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr03rqq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.941928  YSH: -1.74962    ROT: 359.994    SCALE: 0.999985
+[INFO    ] 
+[INFO    ] XRMS: 0.0840015    YRMS: 0.0846333
+[INFO    ] 
+[INFO    ] RMS_RA: 5.74407e-06 (deg)   RMS_DEC: 1.42802e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  5471  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr03rqq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr03rqq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  5471
+[INFO    ] 
+[INFO    ] # of points after clipping:  5471
+[INFO    ] 
+[INFO    ] Total # points:  5471
+[INFO    ] 
+[INFO    ] # of points after clipping:  5471
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr03rqq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr03rqq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr03rqq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3879491348901492e-05 -1.4702367227997794e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.634730093747396e-05 3.0210787415426872e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77008089457709 -45.852017357548995
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541984605215435
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.950311598671735
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr03rqq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr03rqq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr03rrq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr03rrq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -1.34439683215 -2.07354537161
+[INFO    ] 
+[INFO    ]     with significance of  25229.9173691 and  2829.0  matches
+[INFO    ] 
+[INFO    ] Found 5919 matches for icrr03rrq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr03rrq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.964153  YSH: -1.78563    ROT: 359.993    SCALE: 0.999985
+[INFO    ] 
+[INFO    ] XRMS: 0.115046    YRMS: 0.102461
+[INFO    ] 
+[INFO    ] RMS_RA: 7.56997e-06 (deg)   RMS_DEC: 1.52354e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  5003  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr03rrq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr03rrq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  5003
+[INFO    ] 
+[INFO    ] # of points after clipping:  5003
+[INFO    ] 
+[INFO    ] Total # points:  5003
+[INFO    ] 
+[INFO    ] # of points after clipping:  5003
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr03rrq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr03rrq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr03rrq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.3878481186735859e-05 -1.4702756616573728e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6347740324061309e-05 3.0209883876622136e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.77123033867929 -45.852243422361518
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541735500422555
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.951582949566458
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr03rrq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr03rrq_flt_xy_catalog.match
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] 
+[INFO    ] Performing fit for: icrr03rtq_flt.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'icrr03rtq_flt.fits' with sources from reference image 'icrr01y7q_flt.fits'
+[INFO    ] 
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] 
+[INFO    ] Found initial X and Y shifts of  -1.5429804114 -2.08044294886
+[INFO    ] 
+[INFO    ]     with significance of  24579.5680523 and  2620.0  matches
+[INFO    ] 
+[INFO    ] Found 5846 matches for icrr03rtq_flt.fits...
+[INFO    ] 
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Performing "rscale" fit
+[INFO    ] Computed  rscale  fit for  icrr03rtq_flt.fits : 
+[INFO    ] 
+[INFO    ] XSH: -0.964725  YSH: -1.84772    ROT: 359.994    SCALE: 1
+[INFO    ] 
+[INFO    ] XRMS: 0.101151    YRMS: 0.0945784
+[INFO    ] 
+[INFO    ] RMS_RA: 6.75484e-06 (deg)   RMS_DEC: 1.48391e-06 (deg)
+[INFO    ] 
+[INFO    ] Final solution based on  4981  objects.
+[INFO    ] 
+[INFO    ] Creating catalog for the fit: icrr03rtq_flt_catalog_fit.match
+[INFO    ] wrote XY data to:  icrr03rtq_flt_catalog_fit.match
+[INFO    ] 
+[INFO    ] Total # points:  4981
+[INFO    ] 
+[INFO    ] # of points after clipping:  4981
+[INFO    ] 
+[INFO    ] Total # points:  4981
+[INFO    ] 
+[INFO    ] # of points after clipping:  4981
+[INFO    ] 
+[INFO    ] 
+[INFO    ] ....Updating header for icrr03rtq_flt.fits...
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+[INFO    ] Processing icrr03rtq_flt.fits['SCI',1]
+[INFO    ] 
+[INFO    ] Updating header for icrr03rtq_flt.fits[1]
+[INFO    ] 
+[INFO    ]     with WCS of
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] CD_11  CD_12: -3.387720812690601e-05 -1.4702499151430405e-05
+[INFO    ] 
+[INFO    ] CD_21  CD_22: -1.6347456333939387e-05 3.0208747665474684e-05
+[INFO    ] 
+[INFO    ] CRVAL    : 251.7723801617868 -45.852468299932205
+[INFO    ] 
+[INFO    ] CRPIX    : 507.0 507.0
+[INFO    ] 
+[INFO    ] NAXIS    : 1014 1014
+[INFO    ] 
+[INFO    ] Plate Scale : 0.13541494357050721
+[INFO    ] 
+[INFO    ] ORIENTAT : -25.952036101975477
+[INFO    ] 
+[INFO    ] WCSNAME  :  TWEAK
+[INFO    ] 
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] 
+        Warning: to_header() was invoked without ``relax=True``: stripping all SIP
+        coefficients from output header, and stripping "-SIP" from output CTYPE
+        if it was originally present.
+
+        Therefore astrometry obtained for output image may be different from
+        original image because SIP is no longer present.
+
+        Please inspect the headers of input and output images to verify, and
+        modify the headers if necessary.
+        
+[INFO    ] Deleting intermediate match file: icrr03rtq_flt_catalog_fit.match
+[INFO    ] Deleting intermediate match file: icrr03rtq_flt_xy_catalog.match
+[INFO    ] Writing out shiftfile : ir_shifts.txt
+[INFO    ] 
+[INFO    ] Trailer file written to:  tweakreg.log
+[INFO    ] 

@@ -17,7 +17,7 @@ def driz_all(fltlist, ad_dict):
     '''
     Function to create the individual drizzled images using
     one image as reference
- 
+
     :fltlist:
         List of flt files to be processed. Processing
         will happen in the provided order. The first
@@ -30,7 +30,7 @@ def driz_all(fltlist, ad_dict):
     ref = fltlist[0].replace('flt', 'drz')
 
     for im in fltlist:
- 
+
         if os.path.exists(ref):
             astrodrizzle.AstroDrizzle(im,final_refimage=ref, **ad_dict)
         else:
@@ -99,3 +99,46 @@ def subtract(im1, im2):
     hdu.close()
 
     return out
+
+def make_high_masks(master, thresh, inp, out=None, extdrz=1, extflt=1):
+    # Not sure how sky works with blot in this case.
+    # Perhaps converting coordinate positions is better (astropy WCS)
+    '''
+    Function that masks high pixel values from deep mosaic and
+        produces masks in flt frame
+
+    :master:
+        file name of the deep image to generate mask from
+
+    :thresh:
+        Threshold over which to flag pixel values as high
+
+    :inp:
+        file name of the destination reference frame flt
+
+    :out:
+        file name of the output
+
+    :extdrz:
+        extension number of the image to be blotted back (int type)
+
+    :extflt:
+        extension number of the destination reference image (int type)
+
+    '''
+
+    master_mask = master.replace('_drz.fits', '_mastermask_{}.fits'.format(thresh))
+
+    # Make mask in sky frame
+    if not os.path.exists(master_mask):
+        shutil.copy(master,master_mask)
+        hdu = fits.open(master_mask, mode='update')
+        hdu[extdrz].data[hdu[extdrz].data>=thresh] = 1.
+        hdu[extdrz].data[hdu[extdrz].data<=thresh] = 0.
+        hdu.close()
+
+    if out == None:
+        out = inp.replace('flt.fits', '_mask_{}.fits'.format(thresh))
+    # Blot back sky space mask to flt frames
+    mask = blot_back(master_mask, inp, out, extdrz, extflt)
+    return mask
