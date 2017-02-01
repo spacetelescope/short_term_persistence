@@ -12,7 +12,7 @@ from drizzlepac import astrodrizzle, ablot
 from astropy.io import fits
 import os, shutil
 
-def driz_all(fltlist, ad_dict):
+def driz_all(fltlist, ad_dict, drzext = 'drz'):
 
     '''
     Function to create the individual drizzled images using
@@ -27,12 +27,13 @@ def driz_all(fltlist, ad_dict):
         Dictionary of parameters to pass to astrodrizzle
     '''
 
-    ref = fltlist[0].replace('flt', 'drz')
+    ref = fltlist[0].replace('flt', drzext)
 
     for im in fltlist:
  
         if os.path.exists(ref):
-            astrodrizzle.AstroDrizzle(im,final_refimage=ref, **ad_dict)
+            print('Ref:',ref)
+            astrodrizzle.AstroDrizzle(im,driz_sep_refimage=ref, final_refimage=ref, **ad_dict)
         else:
             astrodrizzle.AstroDrizzle(im, **ad_dict)
 

@@ -1,0 +1,2 @@
+Exp1_flt.fits Exp1_flt.xym
+Exp2_flt.fits Exp2_flt.xym
