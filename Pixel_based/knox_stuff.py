@@ -150,8 +150,8 @@ def make_persistence_image_spv(x,model,exptime=500,dt=300):
 
     History:
 
-    170331    gennaro This needs the model in input as dictionary
-
+    170331    gennaro This needs the model in input a dictionary
+                      NOTE that the x image must be in counts
 
     '''
 
