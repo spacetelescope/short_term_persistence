@@ -1,0 +1,544 @@
+nohup: ignoring input
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ruq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rwq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ryq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s0q_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s2q_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s4q_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s6q_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s8q_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03saq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03scq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03seq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03sgq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03siq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03skq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03smq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+CRDS - INFO -  No comparison context or source comparison requested.
+CRDS - INFO -  ===> Processing /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03soq_flt.fits
+CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+***************
+57247.89789127 57247.90197646 352.96041641850024 EXT icrr01y7q_flt.fits
+57247.9027409 57247.90682572 352.9284480493516 EXT icrr01y8q_flt.fits
+57247.90759053 57247.91167535 352.9284480493516 EXT icrr01yaq_flt.fits
+57247.91243979 57247.91652498 352.9604157898575 EXT icrr01ycq_flt.fits
+57247.91728942 57247.9213746 352.9595520347357 EXT icrr01yeq_flt.fits
+57247.92213905 57247.92622386 352.927583665587 EXT icrr01ygq_flt.fits
+57247.92698868 57247.93107349 352.927583665587 EXT icrr01yiq_flt.fits
+57247.93219683 57247.93913238 599.2315201554447 DARK icrr01ykq_flt.fits
+57247.93937275 57247.94345794 352.9604157898575 DARK icrr01ymq_flt.fits
+57247.94370164 57247.94778646 352.9284480493516 DARK icrr01yoq_flt.fits
+57247.94803016 57247.95211535 352.96041641850024 DARK icrr01yqq_flt.fits
+57247.95235905 57247.95644386 352.927583665587 DARK icrr01ysq_flt.fits
+57247.95668757 57247.96077275 352.9595520347357 DARK icrr01yuq_flt.fits
+57247.96125942 57247.96534423 352.927583665587 DARK icrr01ywq_flt.fits
+57247.96558794 57247.96967312 352.9595520347357 DARK icrr01yyq_flt.fits
+57247.96991683 57247.97400164 352.92758429422975 DARK icrr01z0q_flt.fits
+57247.97424535 57247.97833053 352.9595520347357 DARK icrr01z2q_flt.fits
+57247.97857423 57247.98265905 352.9284480493516 DARK icrr01z4q_flt.fits
+57247.98290275 57247.98698794 352.9604157898575 DARK icrr01z6q_flt.fits
+57247.98723164 57247.99131646 352.9284480493516 DARK icrr01z8q_flt.fits
+57247.99156016 57247.99564535 352.9604157898575 DARK icrr01zaq_flt.fits
+57247.99588905 57247.99997386 352.92758429422975 DARK icrr01zcq_flt.fits
+57248.00021757 57248.00430275 352.9595520347357 DARK icrr01zeq_flt.fits
+***************
+57250.55087757 57250.55665572 499.23215999733657 EXT icrr02ozq_flt.fits
+57250.55741683 57250.56319498 499.23215999733657 EXT icrr02p0q_flt.fits
+57250.56395609 57250.56973423 499.231295613572 EXT icrr02p2q_flt.fits
+57250.57049535 57250.57627349 499.231295613572 EXT icrr02p3q_flt.fits
+57250.57703498 57250.58281312 499.23129624221474 EXT icrr02p5q_flt.fits
+57250.58393312 57250.59086868 599.2323845392093 DARK icrr02p6q_flt.fits
+57250.59110905 57250.59519386 352.927583665587 DARK icrr02p8q_flt.fits
+57250.59543757 57250.59952275 352.9595520347357 DARK icrr02paq_flt.fits
+57250.59976646 57250.60385127 352.92758429422975 DARK icrr02pcq_flt.fits
+57250.60409498 57250.60818016 352.9595520347357 DARK icrr02peq_flt.fits
+57250.60842386 57250.61250868 352.9284480493516 DARK icrr02pgq_flt.fits
+57250.61275238 57250.61683757 352.9604157898575 DARK icrr02piq_flt.fits
+57250.61732423 57250.62140905 352.9284480493516 DARK icrr02pkq_flt.fits
+57250.62165275 57250.62573794 352.9604157898575 DARK icrr02pmq_flt.fits
+57250.62598164 57250.63006646 352.9284480493516 DARK icrr02poq_flt.fits
+57250.63031016 57250.63439535 352.96041641850024 DARK icrr02pqq_flt.fits
+57250.63463905 57250.63872386 352.92758429422975 DARK icrr02psq_flt.fits
+57250.63896757 57250.64305275 352.9595520347357 DARK icrr02puq_flt.fits
+57250.64329646 57250.64738127 352.927583665587 DARK icrr02pwq_flt.fits
+57250.64762498 57250.65171016 352.95955140609294 DARK icrr02pyq_flt.fits
+57250.65195386 57250.65603868 352.9284480493516 DARK icrr02q0q_flt.fits
+***************
+57261.4189446 57261.42819498 799.2328317370266 EXT icrr03rqq_flt.fits
+57261.42895609 57261.43820646 799.2319679819047 EXT icrr03rrq_flt.fits
+57261.43896757 57261.44821831 799.2639357224107 EXT icrr03rtq_flt.fits
+57261.44933794 57261.45627349 599.2315201554447 DARK icrr03ruq_flt.fits
+57261.45651386 57261.46059905 352.9604157898575 DARK icrr03rwq_flt.fits
+57261.46084275 57261.46492757 352.9284480493516 DARK icrr03ryq_flt.fits
+57261.46517127 57261.46925646 352.9604157898575 DARK icrr03s0q_flt.fits
+57261.46950016 57261.47358498 352.9284480493516 DARK icrr03s2q_flt.fits
+57261.47382868 57261.47791386 352.9595520347357 DARK icrr03s4q_flt.fits
+57261.47815757 57261.48224238 352.927583665587 DARK icrr03s6q_flt.fits
+57261.48272942 57261.48681423 352.927583665587 DARK icrr03s8q_flt.fits
+57261.48705794 57261.49114312 352.9595520347357 DARK icrr03saq_flt.fits
+57261.49138683 57261.49547164 352.92758429422975 DARK icrr03scq_flt.fits
+57261.49571535 57261.49980053 352.9595520347357 DARK icrr03seq_flt.fits
+57261.50004423 57261.50412905 352.9284480493516 DARK icrr03sgq_flt.fits
+57261.50437275 57261.50845794 352.9604157898575 DARK icrr03siq_flt.fits
+57261.50870164 57261.51278646 352.9284480493516 DARK icrr03skq_flt.fits
+57261.51303016 57261.51711535 352.9604157898575 DARK icrr03smq_flt.fits
+57261.51735905 57261.52144386 352.92758429422975 DARK icrr03soq_flt.fits
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rqq_flt.fits 0.182360684955
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rrq_flt.fits 0.192216993578
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rtq_flt.fits 0.250219274829
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ruq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rwq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ryq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s0q_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s2q_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s4q_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s6q_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s8q_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03saq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03scq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03seq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03sgq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03siq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03skq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03smq_flt.fits 0.0
+/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03soq_flt.fits 0.0
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rqq_flt.fits to the datacube
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rrq_flt.fits to the datacube
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rtq_flt.fits to the datacube
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ruq_flt.fits to the datacube
+iref$xag19297i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rwq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ryq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s0q_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s2q_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s4q_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s6q_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s8q_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03saq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03scq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03seq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03sgq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03siq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03skq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03smq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03soq_flt.fits to the datacube
+iref$xag19295i_drk.fits
+Done1
+Done2
+Done3
+Done4
+Done5
+Done6
+Done7
+Done8
+Done9
+Done10
+Done11
+Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in less
+  mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
+Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in greater
+  mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rqq_flt.fits
+Pixels with potentially right stimuli: 348185
+Pixels with really right stimuli: 348185
+Pixels with ramps extending for at least 1  exposures: 34544
+Pixels with ramps extending for at least 2  exposures: 24748
+Pixels with ramps extending for at least 3  exposures: 24748
+Pixels with ramps extending for at least 4  exposures: 24748
+Pixels with ramps extending for at least 5  exposures: 24748
+Pixels with ramps extending for at least 6  exposures: 24748
+Pixels with ramps extending for at least 7  exposures: 24748
+Pixels with ramps extending for at least 8  exposures: 24748
+Pixels with ramps extending for at least 9  exposures: 24748
+Pixels with ramps extending for at least 10  exposures: 24748
+Pixels with ramps extending for at least 11  exposures: 24748
+Pixels with ramps extending for at least 12  exposures: 24748
+Pixels with ramps extending for at least 13  exposures: 24748
+Pixels with ramps extending for at least 14  exposures: 24748
+Pixels with ramps extending for at least 15  exposures: 24748
+Pixels with ramps extending for at least 16  exposures: 24748
+Pixels with ramps extending for at least 17  exposures: 24748
+Pixels with ramps extending for at least 18  exposures: 24748
+Number of entries:  6695364
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rrq_flt.fits
+Pixels with potentially right stimuli: 350463
+Pixels with really right stimuli: 69878
+Pixels with ramps extending for at least 1  exposures: 17440
+Pixels with ramps extending for at least 2  exposures: 17440
+Pixels with ramps extending for at least 3  exposures: 17440
+Pixels with ramps extending for at least 4  exposures: 17440
+Pixels with ramps extending for at least 5  exposures: 17440
+Pixels with ramps extending for at least 6  exposures: 17440
+Pixels with ramps extending for at least 7  exposures: 17440
+Pixels with ramps extending for at least 8  exposures: 17440
+Pixels with ramps extending for at least 9  exposures: 17440
+Pixels with ramps extending for at least 10  exposures: 17440
+Pixels with ramps extending for at least 11  exposures: 17440
+Pixels with ramps extending for at least 12  exposures: 17440
+Pixels with ramps extending for at least 13  exposures: 17440
+Pixels with ramps extending for at least 14  exposures: 17440
+Pixels with ramps extending for at least 15  exposures: 17440
+Pixels with ramps extending for at least 16  exposures: 17440
+Pixels with ramps extending for at least 17  exposures: 17440
+Number of entries:  4377440
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rtq_flt.fits
+Pixels with potentially right stimuli: 351777
+Pixels with really right stimuli: 57209
+Pixels with ramps extending for at least 1  exposures: 57209
+Pixels with ramps extending for at least 2  exposures: 57209
+Pixels with ramps extending for at least 3  exposures: 57209
+Pixels with ramps extending for at least 4  exposures: 57209
+Pixels with ramps extending for at least 5  exposures: 57209
+Pixels with ramps extending for at least 6  exposures: 57209
+Pixels with ramps extending for at least 7  exposures: 57209
+Pixels with ramps extending for at least 8  exposures: 57209
+Pixels with ramps extending for at least 9  exposures: 57209
+Pixels with ramps extending for at least 10  exposures: 57209
+Pixels with ramps extending for at least 11  exposures: 57209
+Pixels with ramps extending for at least 12  exposures: 57209
+Pixels with ramps extending for at least 13  exposures: 57209
+Pixels with ramps extending for at least 14  exposures: 57209
+Pixels with ramps extending for at least 15  exposures: 57209
+Pixels with ramps extending for at least 16  exposures: 57209
+Number of entries:  13558533
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ruq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rwq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ryq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s0q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s2q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s4q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s6q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s8q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03saq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03scq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03seq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03sgq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03siq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03skq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03smq_flt.fits
+Creating df2
+Done
+Number of points: 24631337
+Number of unique ramps: 109193
+0  out of 109193
+500  out of 109193
+1000  out of 109193
+1500  out of 109193
+2000  out of 109193
+2500  out of 109193
+3000  out of 109193
+3500  out of 109193
+4000  out of 109193
+4500  out of 109193
+5000  out of 109193
+5500  out of 109193
+6000  out of 109193
+6500  out of 109193
+7000  out of 109193
+7500  out of 109193
+8000  out of 109193
+8500  out of 109193
+9000  out of 109193
+9500  out of 109193
+10000  out of 109193
+10500  out of 109193
+11000  out of 109193
+11500  out of 109193
+12000  out of 109193
+12500  out of 109193
+13000  out of 109193
+13500  out of 109193
+14000  out of 109193
+14500  out of 109193
+15000  out of 109193
+15500  out of 109193
+16000  out of 109193
+16500  out of 109193
+17000  out of 109193
+17500  out of 109193
+18000  out of 109193
+18500  out of 109193
+19000  out of 109193
+19500  out of 109193
+20000  out of 109193
+20500  out of 109193
+21000  out of 109193
+21500  out of 109193
+22000  out of 109193
+22500  out of 109193
+23000  out of 109193
+23500  out of 109193
+24000  out of 109193
+24500  out of 109193
+25000  out of 109193
+25500  out of 109193
+26000  out of 109193
+26500  out of 109193
+27000  out of 109193
+27500  out of 109193
+28000  out of 109193
+28500  out of 109193
+29000  out of 109193
+29500  out of 109193
+30000  out of 109193
+30500  out of 109193
+31000  out of 109193
+31500  out of 109193
+32000  out of 109193
+32500  out of 109193
+33000  out of 109193
+33500  out of 109193
+34000  out of 109193
+34500  out of 109193
+35000  out of 109193
+35500  out of 109193
+36000  out of 109193
+36500  out of 109193
+37000  out of 109193
+37500  out of 109193
+38000  out of 109193
+38500  out of 109193
+39000  out of 109193
+39500  out of 109193
+40000  out of 109193
+40500  out of 109193
+41000  out of 109193
+41500  out of 109193
+42000  out of 109193
+42500  out of 109193
+43000  out of 109193
+43500  out of 109193
+44000  out of 109193
+44500  out of 109193
+45000  out of 109193
+45500  out of 109193
+46000  out of 109193
+46500  out of 109193
+47000  out of 109193
+47500  out of 109193
+48000  out of 109193
+48500  out of 109193
+49000  out of 109193
+49500  out of 109193
+50000  out of 109193
+50500  out of 109193
+51000  out of 109193
+51500  out of 109193
+52000  out of 109193
+52500  out of 109193
+53000  out of 109193
+53500  out of 109193
+54000  out of 109193
+54500  out of 109193
+55000  out of 109193
+55500  out of 109193
+56000  out of 109193
+56500  out of 109193
+57000  out of 109193
+57500  out of 109193
+58000  out of 109193
+58500  out of 109193
+59000  out of 109193
+59500  out of 109193
+60000  out of 109193
+60500  out of 109193
+61000  out of 109193
+61500  out of 109193
+62000  out of 109193
+62500  out of 109193
+63000  out of 109193
+63500  out of 109193
+64000  out of 109193
+64500  out of 109193
+65000  out of 109193
+65500  out of 109193
+66000  out of 109193
+66500  out of 109193
+67000  out of 109193
+67500  out of 109193
+68000  out of 109193
+68500  out of 109193
+69000  out of 109193
+69500  out of 109193
+70000  out of 109193
+70500  out of 109193
+71000  out of 109193
+71500  out of 109193
+72000  out of 109193
+72500  out of 109193
+73000  out of 109193
+73500  out of 109193
+74000  out of 109193
+74500  out of 109193
+75000  out of 109193
+75500  out of 109193
+76000  out of 109193
+76500  out of 109193
+77000  out of 109193
+77500  out of 109193
+78000  out of 109193
+78500  out of 109193
+79000  out of 109193
+79500  out of 109193
+80000  out of 109193
+80500  out of 109193
+81000  out of 109193
+81500  out of 109193
+82000  out of 109193
+82500  out of 109193
+83000  out of 109193
+83500  out of 109193
+84000  out of 109193
+84500  out of 109193
+85000  out of 109193
+85500  out of 109193
+86000  out of 109193
+86500  out of 109193
+87000  out of 109193
+87500  out of 109193
+88000  out of 109193
+88500  out of 109193
+89000  out of 109193
+89500  out of 109193
+90000  out of 109193
+90500  out of 109193
+91000  out of 109193
+91500  out of 109193
+92000  out of 109193
+92500  out of 109193
+93000  out of 109193
+93500  out of 109193
+94000  out of 109193
+94500  out of 109193
+95000  out of 109193
+95500  out of 109193
+96000  out of 109193
+96500  out of 109193
+97000  out of 109193
+97500  out of 109193
+98000  out of 109193
+98500  out of 109193
+99000  out of 109193
+99500  out of 109193
+100000  out of 109193
+100500  out of 109193
+101000  out of 109193
+101500  out of 109193
+102000  out of 109193
+102500  out of 109193
+103000  out of 109193
+103500  out of 109193
+104000  out of 109193
+104500  out of 109193
+105000  out of 109193
+105500  out of 109193
+106000  out of 109193
+106500  out of 109193
+107000  out of 109193
+107500  out of 109193
+108000  out of 109193
+108500  out of 109193
+109000  out of 109193
+Recasting up df2
+Done
+Defining the lookup dataframe
+Done
+Defining the values dataframe
+Done
+Saving
+Done
