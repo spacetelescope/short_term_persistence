@@ -630,10 +630,10 @@ for i,ind in enumerate(iuniq):
 #Make sure that the data types are set to more space-efficient ones
 
 print('Recasting up df2')
-#df2['Ind_pers'] = df2['Ind_pers'].astype(np.uint8)
-#df2['Read index'] = df2['Read index'].astype(np.uint8)
-#df2['NSAMP'] = df2['NSAMP'].astype(np.uint8)
-#df2[['tfromstim','deltat','meancurr','stdvcurr']] = df2[['tfromstim','deltat','meancurr','stdvcurr']].astype(np.float32)
+df2['Ind_pers'] = df2['Ind_pers'].astype(np.uint8)
+df2['Read index'] = df2['Read index'].astype(np.uint8)
+df2['NSAMP'] = df2['NSAMP'].astype(np.uint8)
+df2[['tfromstim','deltat','meancurr','stdvcurr']] = df2[['tfromstim','deltat','meancurr','stdvcurr']].astype(np.float32)
 df2['Uniq_multiindex'] = df2['Uniq_multiindex'].astype(np.uint32)
 print('Done')
 
@@ -650,13 +650,13 @@ print('Done')
 
 print('Defining the values dataframe')
 df_values=pd.DataFrame()
-df_values['tfromstim']       = df2['tfromstim'].values.astype(np.float32) 
-df_values['deltat']          = df2['deltat'].values.astype(np.float32) 
-df_values['Read index']      = df2['Read index'].values.astype(np.uint8) 
-df_values['meancurr']        = df2['meancurr'].values.astype(np.float32) 
-df_values['stdvcurr']        = df2['stdvcurr'].values.astype(np.float32) 
-df_values['NSAMP']           = df2['NSAMP'].values.astype(np.uint8) 
-df_values['Ind_pers']        = df2['Ind_pers'].values.astype(np.uint8) 
+df_values['tfromstim']       = df2['tfromstim'].values
+df_values['deltat']          = df2['deltat'].values
+df_values['Read index']      = df2['Read index'].values
+df_values['meancurr']        = df2['meancurr'].values
+df_values['stdvcurr']        = df2['stdvcurr'].values
+df_values['NSAMP']           = df2['NSAMP'].values
+df_values['Ind_pers']        = df2['Ind_pers'].values
 df_values['Pers_type']       = df2['Pers_type'].values 
 df_values['DQ_pers']         = df2['DQ_pers'].values 
 df_values['Uniq_multiindex'] = df2['Uniq_multiindex'].values 
@@ -665,6 +665,6 @@ print('Done')
 
 print('Saving')
 df_values.to_hdf(sdir+'DF.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_values', mode='a',format = 't')
-df_values.to_hdf(sdir+'DF.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_values', mode='a',format = 't')
+df_lookup.to_hdf(sdir+'DF.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_lookup', mode='a',format = 't')
 print('Done')
 
