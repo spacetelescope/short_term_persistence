@@ -134,3 +134,331 @@ Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in less
   mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
 Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in greater
   mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rqq_flt.fits
+Pixels with potentially right stimuli: 348185
+Pixels with really right stimuli: 348185
+Pixels with ramps extending for at least 1  exposures: 34544
+Pixels with ramps extending for at least 2  exposures: 24748
+Pixels with ramps extending for at least 3  exposures: 24748
+Pixels with ramps extending for at least 4  exposures: 24748
+Pixels with ramps extending for at least 5  exposures: 24748
+Pixels with ramps extending for at least 6  exposures: 24748
+Pixels with ramps extending for at least 7  exposures: 24748
+Pixels with ramps extending for at least 8  exposures: 24748
+Pixels with ramps extending for at least 9  exposures: 24748
+Pixels with ramps extending for at least 10  exposures: 24748
+Pixels with ramps extending for at least 11  exposures: 24748
+Pixels with ramps extending for at least 12  exposures: 24748
+Pixels with ramps extending for at least 13  exposures: 24748
+Pixels with ramps extending for at least 14  exposures: 24748
+Pixels with ramps extending for at least 15  exposures: 24748
+Pixels with ramps extending for at least 16  exposures: 24748
+Pixels with ramps extending for at least 17  exposures: 24748
+Pixels with ramps extending for at least 18  exposures: 24748
+Number of entries:  6695364
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rrq_flt.fits
+Pixels with potentially right stimuli: 350463
+Pixels with really right stimuli: 69878
+Pixels with ramps extending for at least 1  exposures: 17440
+Pixels with ramps extending for at least 2  exposures: 17440
+Pixels with ramps extending for at least 3  exposures: 17440
+Pixels with ramps extending for at least 4  exposures: 17440
+Pixels with ramps extending for at least 5  exposures: 17440
+Pixels with ramps extending for at least 6  exposures: 17440
+Pixels with ramps extending for at least 7  exposures: 17440
+Pixels with ramps extending for at least 8  exposures: 17440
+Pixels with ramps extending for at least 9  exposures: 17440
+Pixels with ramps extending for at least 10  exposures: 17440
+Pixels with ramps extending for at least 11  exposures: 17440
+Pixels with ramps extending for at least 12  exposures: 17440
+Pixels with ramps extending for at least 13  exposures: 17440
+Pixels with ramps extending for at least 14  exposures: 17440
+Pixels with ramps extending for at least 15  exposures: 17440
+Pixels with ramps extending for at least 16  exposures: 17440
+Pixels with ramps extending for at least 17  exposures: 17440
+Number of entries:  4377440
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rtq_flt.fits
+Pixels with potentially right stimuli: 351777
+Pixels with really right stimuli: 57209
+Pixels with ramps extending for at least 1  exposures: 57209
+Pixels with ramps extending for at least 2  exposures: 57209
+Pixels with ramps extending for at least 3  exposures: 57209
+Pixels with ramps extending for at least 4  exposures: 57209
+Pixels with ramps extending for at least 5  exposures: 57209
+Pixels with ramps extending for at least 6  exposures: 57209
+Pixels with ramps extending for at least 7  exposures: 57209
+Pixels with ramps extending for at least 8  exposures: 57209
+Pixels with ramps extending for at least 9  exposures: 57209
+Pixels with ramps extending for at least 10  exposures: 57209
+Pixels with ramps extending for at least 11  exposures: 57209
+Pixels with ramps extending for at least 12  exposures: 57209
+Pixels with ramps extending for at least 13  exposures: 57209
+Pixels with ramps extending for at least 14  exposures: 57209
+Pixels with ramps extending for at least 15  exposures: 57209
+Pixels with ramps extending for at least 16  exposures: 57209
+Number of entries:  13558533
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ruq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03rwq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03ryq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s0q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s2q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s4q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s6q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03s8q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03saq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03scq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03seq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03sgq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03siq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03skq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit03/icrr03smq_flt.fits
+Creating df2
+Done
+Number of points: 24631337
+Number of unique ramps: 109193
+0  out of 109193
+500  out of 109193
+1000  out of 109193
+1500  out of 109193
+2000  out of 109193
+2500  out of 109193
+3000  out of 109193
+3500  out of 109193
+4000  out of 109193
+4500  out of 109193
+5000  out of 109193
+5500  out of 109193
+6000  out of 109193
+6500  out of 109193
+7000  out of 109193
+7500  out of 109193
+8000  out of 109193
+8500  out of 109193
+9000  out of 109193
+9500  out of 109193
+10000  out of 109193
+10500  out of 109193
+11000  out of 109193
+11500  out of 109193
+12000  out of 109193
+12500  out of 109193
+13000  out of 109193
+13500  out of 109193
+14000  out of 109193
+14500  out of 109193
+15000  out of 109193
+15500  out of 109193
+16000  out of 109193
+16500  out of 109193
+17000  out of 109193
+17500  out of 109193
+18000  out of 109193
+18500  out of 109193
+19000  out of 109193
+19500  out of 109193
+20000  out of 109193
+20500  out of 109193
+21000  out of 109193
+21500  out of 109193
+22000  out of 109193
+22500  out of 109193
+23000  out of 109193
+23500  out of 109193
+24000  out of 109193
+24500  out of 109193
+25000  out of 109193
+25500  out of 109193
+26000  out of 109193
+26500  out of 109193
+27000  out of 109193
+27500  out of 109193
+28000  out of 109193
+28500  out of 109193
+29000  out of 109193
+29500  out of 109193
+30000  out of 109193
+30500  out of 109193
+31000  out of 109193
+31500  out of 109193
+32000  out of 109193
+32500  out of 109193
+33000  out of 109193
+33500  out of 109193
+34000  out of 109193
+34500  out of 109193
+35000  out of 109193
+35500  out of 109193
+36000  out of 109193
+36500  out of 109193
+37000  out of 109193
+37500  out of 109193
+38000  out of 109193
+38500  out of 109193
+39000  out of 109193
+39500  out of 109193
+40000  out of 109193
+40500  out of 109193
+41000  out of 109193
+41500  out of 109193
+42000  out of 109193
+42500  out of 109193
+43000  out of 109193
+43500  out of 109193
+44000  out of 109193
+44500  out of 109193
+45000  out of 109193
+45500  out of 109193
+46000  out of 109193
+46500  out of 109193
+47000  out of 109193
+47500  out of 109193
+48000  out of 109193
+48500  out of 109193
+49000  out of 109193
+49500  out of 109193
+50000  out of 109193
+50500  out of 109193
+51000  out of 109193
+51500  out of 109193
+52000  out of 109193
+52500  out of 109193
+53000  out of 109193
+53500  out of 109193
+54000  out of 109193
+54500  out of 109193
+55000  out of 109193
+55500  out of 109193
+56000  out of 109193
+56500  out of 109193
+57000  out of 109193
+57500  out of 109193
+58000  out of 109193
+58500  out of 109193
+59000  out of 109193
+59500  out of 109193
+60000  out of 109193
+60500  out of 109193
+61000  out of 109193
+61500  out of 109193
+62000  out of 109193
+62500  out of 109193
+63000  out of 109193
+63500  out of 109193
+64000  out of 109193
+64500  out of 109193
+65000  out of 109193
+65500  out of 109193
+66000  out of 109193
+66500  out of 109193
+67000  out of 109193
+67500  out of 109193
+68000  out of 109193
+68500  out of 109193
+69000  out of 109193
+69500  out of 109193
+70000  out of 109193
+70500  out of 109193
+71000  out of 109193
+71500  out of 109193
+72000  out of 109193
+72500  out of 109193
+73000  out of 109193
+73500  out of 109193
+74000  out of 109193
+74500  out of 109193
+75000  out of 109193
+75500  out of 109193
+76000  out of 109193
+76500  out of 109193
+77000  out of 109193
+77500  out of 109193
+78000  out of 109193
+78500  out of 109193
+79000  out of 109193
+79500  out of 109193
+80000  out of 109193
+80500  out of 109193
+81000  out of 109193
+81500  out of 109193
+82000  out of 109193
+82500  out of 109193
+83000  out of 109193
+83500  out of 109193
+84000  out of 109193
+84500  out of 109193
+85000  out of 109193
+85500  out of 109193
+86000  out of 109193
+86500  out of 109193
+87000  out of 109193
+87500  out of 109193
+88000  out of 109193
+88500  out of 109193
+89000  out of 109193
+89500  out of 109193
+90000  out of 109193
+90500  out of 109193
+91000  out of 109193
+91500  out of 109193
+92000  out of 109193
+92500  out of 109193
+93000  out of 109193
+93500  out of 109193
+94000  out of 109193
+94500  out of 109193
+95000  out of 109193
+95500  out of 109193
+96000  out of 109193
+96500  out of 109193
+97000  out of 109193
+97500  out of 109193
+98000  out of 109193
+98500  out of 109193
+99000  out of 109193
+99500  out of 109193
+100000  out of 109193
+100500  out of 109193
+101000  out of 109193
+101500  out of 109193
+102000  out of 109193
+102500  out of 109193
+103000  out of 109193
+103500  out of 109193
+104000  out of 109193
+104500  out of 109193
+105000  out of 109193
+105500  out of 109193
+106000  out of 109193
+106500  out of 109193
+107000  out of 109193
+107500  out of 109193
+108000  out of 109193
+108500  out of 109193
+109000  out of 109193
+Recasting up df2
+Done
+Defining the lookup dataframe
+Done
+Defining the values dataframe
+Done
+Saving
+Done

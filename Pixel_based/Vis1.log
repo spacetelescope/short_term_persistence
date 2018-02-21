@@ -141,3 +141,397 @@ Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in less
   mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
 Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in greater
   mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y7q_flt.fits
+Pixels with potentially right stimuli: 195626
+Pixels with really right stimuli: 195626
+Pixels with ramps extending for at least 1  exposures: 14906
+Pixels with ramps extending for at least 2  exposures: 11019
+Pixels with ramps extending for at least 3  exposures: 8446
+Pixels with ramps extending for at least 4  exposures: 6667
+Pixels with ramps extending for at least 5  exposures: 5231
+Pixels with ramps extending for at least 6  exposures: 4145
+Pixels with ramps extending for at least 7  exposures: 4145
+Pixels with ramps extending for at least 8  exposures: 4145
+Pixels with ramps extending for at least 9  exposures: 4145
+Pixels with ramps extending for at least 10  exposures: 4145
+Pixels with ramps extending for at least 11  exposures: 4145
+Pixels with ramps extending for at least 12  exposures: 4145
+Pixels with ramps extending for at least 13  exposures: 4145
+Pixels with ramps extending for at least 14  exposures: 4145
+Pixels with ramps extending for at least 15  exposures: 4145
+Pixels with ramps extending for at least 16  exposures: 4145
+Pixels with ramps extending for at least 17  exposures: 4145
+Pixels with ramps extending for at least 18  exposures: 4145
+Pixels with ramps extending for at least 19  exposures: 4145
+Pixels with ramps extending for at least 20  exposures: 4145
+Pixels with ramps extending for at least 21  exposures: 4145
+Pixels with ramps extending for at least 22  exposures: 4145
+Number of entries:  1738575
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y8q_flt.fits
+Pixels with potentially right stimuli: 198035
+Pixels with really right stimuli: 61589
+Pixels with ramps extending for at least 1  exposures: 11907
+Pixels with ramps extending for at least 2  exposures: 9045
+Pixels with ramps extending for at least 3  exposures: 7112
+Pixels with ramps extending for at least 4  exposures: 5600
+Pixels with ramps extending for at least 5  exposures: 4372
+Pixels with ramps extending for at least 6  exposures: 4372
+Pixels with ramps extending for at least 7  exposures: 4372
+Pixels with ramps extending for at least 8  exposures: 4372
+Pixels with ramps extending for at least 9  exposures: 4372
+Pixels with ramps extending for at least 10  exposures: 4372
+Pixels with ramps extending for at least 11  exposures: 4372
+Pixels with ramps extending for at least 12  exposures: 4372
+Pixels with ramps extending for at least 13  exposures: 4372
+Pixels with ramps extending for at least 14  exposures: 4372
+Pixels with ramps extending for at least 15  exposures: 4372
+Pixels with ramps extending for at least 16  exposures: 4372
+Pixels with ramps extending for at least 17  exposures: 4372
+Pixels with ramps extending for at least 18  exposures: 4372
+Pixels with ramps extending for at least 19  exposures: 4372
+Pixels with ramps extending for at least 20  exposures: 4372
+Pixels with ramps extending for at least 21  exposures: 4372
+Number of entries:  1606704
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yaq_flt.fits
+Pixels with potentially right stimuli: 199736
+Pixels with really right stimuli: 52250
+Pixels with ramps extending for at least 1  exposures: 10463
+Pixels with ramps extending for at least 2  exposures: 8096
+Pixels with ramps extending for at least 3  exposures: 6401
+Pixels with ramps extending for at least 4  exposures: 4898
+Pixels with ramps extending for at least 5  exposures: 4898
+Pixels with ramps extending for at least 6  exposures: 4898
+Pixels with ramps extending for at least 7  exposures: 4898
+Pixels with ramps extending for at least 8  exposures: 4898
+Pixels with ramps extending for at least 9  exposures: 4898
+Pixels with ramps extending for at least 10  exposures: 4898
+Pixels with ramps extending for at least 11  exposures: 4898
+Pixels with ramps extending for at least 12  exposures: 4898
+Pixels with ramps extending for at least 13  exposures: 4898
+Pixels with ramps extending for at least 14  exposures: 4898
+Pixels with ramps extending for at least 15  exposures: 4898
+Pixels with ramps extending for at least 16  exposures: 4898
+Pixels with ramps extending for at least 17  exposures: 4898
+Pixels with ramps extending for at least 18  exposures: 4898
+Pixels with ramps extending for at least 19  exposures: 4898
+Pixels with ramps extending for at least 20  exposures: 4898
+Number of entries:  1608696
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ycq_flt.fits
+Pixels with potentially right stimuli: 198949
+Pixels with really right stimuli: 45182
+Pixels with ramps extending for at least 1  exposures: 9511
+Pixels with ramps extending for at least 2  exposures: 7204
+Pixels with ramps extending for at least 3  exposures: 5577
+Pixels with ramps extending for at least 4  exposures: 5577
+Pixels with ramps extending for at least 5  exposures: 5577
+Pixels with ramps extending for at least 6  exposures: 5577
+Pixels with ramps extending for at least 7  exposures: 5577
+Pixels with ramps extending for at least 8  exposures: 5577
+Pixels with ramps extending for at least 9  exposures: 5577
+Pixels with ramps extending for at least 10  exposures: 5577
+Pixels with ramps extending for at least 11  exposures: 5577
+Pixels with ramps extending for at least 12  exposures: 5577
+Pixels with ramps extending for at least 13  exposures: 5577
+Pixels with ramps extending for at least 14  exposures: 5577
+Pixels with ramps extending for at least 15  exposures: 5577
+Pixels with ramps extending for at least 16  exposures: 5577
+Pixels with ramps extending for at least 17  exposures: 5577
+Pixels with ramps extending for at least 18  exposures: 5577
+Pixels with ramps extending for at least 19  exposures: 5577
+Number of entries:  1656129
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yeq_flt.fits
+Pixels with potentially right stimuli: 196346
+Pixels with really right stimuli: 38502
+Pixels with ramps extending for at least 1  exposures: 7486
+Pixels with ramps extending for at least 2  exposures: 5678
+Pixels with ramps extending for at least 3  exposures: 5678
+Pixels with ramps extending for at least 4  exposures: 5678
+Pixels with ramps extending for at least 5  exposures: 5678
+Pixels with ramps extending for at least 6  exposures: 5678
+Pixels with ramps extending for at least 7  exposures: 5678
+Pixels with ramps extending for at least 8  exposures: 5678
+Pixels with ramps extending for at least 9  exposures: 5678
+Pixels with ramps extending for at least 10  exposures: 5678
+Pixels with ramps extending for at least 11  exposures: 5678
+Pixels with ramps extending for at least 12  exposures: 5678
+Pixels with ramps extending for at least 13  exposures: 5678
+Pixels with ramps extending for at least 14  exposures: 5678
+Pixels with ramps extending for at least 15  exposures: 5678
+Pixels with ramps extending for at least 16  exposures: 5678
+Pixels with ramps extending for at least 17  exposures: 5678
+Pixels with ramps extending for at least 18  exposures: 5678
+Number of entries:  1543146
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ygq_flt.fits
+Pixels with potentially right stimuli: 193389
+Pixels with really right stimuli: 34032
+Pixels with ramps extending for at least 1  exposures: 6411
+Pixels with ramps extending for at least 2  exposures: 6411
+Pixels with ramps extending for at least 3  exposures: 6411
+Pixels with ramps extending for at least 4  exposures: 6411
+Pixels with ramps extending for at least 5  exposures: 6411
+Pixels with ramps extending for at least 6  exposures: 6411
+Pixels with ramps extending for at least 7  exposures: 6411
+Pixels with ramps extending for at least 8  exposures: 6411
+Pixels with ramps extending for at least 9  exposures: 6411
+Pixels with ramps extending for at least 10  exposures: 6411
+Pixels with ramps extending for at least 11  exposures: 6411
+Pixels with ramps extending for at least 12  exposures: 6411
+Pixels with ramps extending for at least 13  exposures: 6411
+Pixels with ramps extending for at least 14  exposures: 6411
+Pixels with ramps extending for at least 15  exposures: 6411
+Pixels with ramps extending for at least 16  exposures: 6411
+Pixels with ramps extending for at least 17  exposures: 6411
+Number of entries:  1615572
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yiq_flt.fits
+Pixels with potentially right stimuli: 191619
+Pixels with really right stimuli: 30390
+Pixels with ramps extending for at least 1  exposures: 30390
+Pixels with ramps extending for at least 2  exposures: 30390
+Pixels with ramps extending for at least 3  exposures: 30390
+Pixels with ramps extending for at least 4  exposures: 30390
+Pixels with ramps extending for at least 5  exposures: 30390
+Pixels with ramps extending for at least 6  exposures: 30390
+Pixels with ramps extending for at least 7  exposures: 30390
+Pixels with ramps extending for at least 8  exposures: 30390
+Pixels with ramps extending for at least 9  exposures: 30390
+Pixels with ramps extending for at least 10  exposures: 30390
+Pixels with ramps extending for at least 11  exposures: 30390
+Pixels with ramps extending for at least 12  exposures: 30390
+Pixels with ramps extending for at least 13  exposures: 30390
+Pixels with ramps extending for at least 14  exposures: 30390
+Pixels with ramps extending for at least 15  exposures: 30390
+Pixels with ramps extending for at least 16  exposures: 30390
+Number of entries:  7202430
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ykq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ymq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yoq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yqq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ysq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yuq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ywq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yyq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01z0q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01z2q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01z4q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01z6q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01z8q_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01zaq_flt.fits
+**********************
+Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01zcq_flt.fits
+Creating df2
+Done
+Number of points: 16971252
+Number of unique ramps: 91074
+0  out of 91074
+500  out of 91074
+1000  out of 91074
+1500  out of 91074
+2000  out of 91074
+2500  out of 91074
+3000  out of 91074
+3500  out of 91074
+4000  out of 91074
+4500  out of 91074
+5000  out of 91074
+5500  out of 91074
+6000  out of 91074
+6500  out of 91074
+7000  out of 91074
+7500  out of 91074
+8000  out of 91074
+8500  out of 91074
+9000  out of 91074
+9500  out of 91074
+10000  out of 91074
+10500  out of 91074
+11000  out of 91074
+11500  out of 91074
+12000  out of 91074
+12500  out of 91074
+13000  out of 91074
+13500  out of 91074
+14000  out of 91074
+14500  out of 91074
+15000  out of 91074
+15500  out of 91074
+16000  out of 91074
+16500  out of 91074
+17000  out of 91074
+17500  out of 91074
+18000  out of 91074
+18500  out of 91074
+19000  out of 91074
+19500  out of 91074
+20000  out of 91074
+20500  out of 91074
+21000  out of 91074
+21500  out of 91074
+22000  out of 91074
+22500  out of 91074
+23000  out of 91074
+23500  out of 91074
+24000  out of 91074
+24500  out of 91074
+25000  out of 91074
+25500  out of 91074
+26000  out of 91074
+26500  out of 91074
+27000  out of 91074
+27500  out of 91074
+28000  out of 91074
+28500  out of 91074
+29000  out of 91074
+29500  out of 91074
+30000  out of 91074
+30500  out of 91074
+31000  out of 91074
+31500  out of 91074
+32000  out of 91074
+32500  out of 91074
+33000  out of 91074
+33500  out of 91074
+34000  out of 91074
+34500  out of 91074
+35000  out of 91074
+35500  out of 91074
+36000  out of 91074
+36500  out of 91074
+37000  out of 91074
+37500  out of 91074
+38000  out of 91074
+38500  out of 91074
+39000  out of 91074
+39500  out of 91074
+40000  out of 91074
+40500  out of 91074
+41000  out of 91074
+41500  out of 91074
+42000  out of 91074
+42500  out of 91074
+43000  out of 91074
+43500  out of 91074
+44000  out of 91074
+44500  out of 91074
+45000  out of 91074
+45500  out of 91074
+46000  out of 91074
+46500  out of 91074
+47000  out of 91074
+47500  out of 91074
+48000  out of 91074
+48500  out of 91074
+49000  out of 91074
+49500  out of 91074
+50000  out of 91074
+50500  out of 91074
+51000  out of 91074
+51500  out of 91074
+52000  out of 91074
+52500  out of 91074
+53000  out of 91074
+53500  out of 91074
+54000  out of 91074
+54500  out of 91074
+55000  out of 91074
+55500  out of 91074
+56000  out of 91074
+56500  out of 91074
+57000  out of 91074
+57500  out of 91074
+58000  out of 91074
+58500  out of 91074
+59000  out of 91074
+59500  out of 91074
+60000  out of 91074
+60500  out of 91074
+61000  out of 91074
+61500  out of 91074
+62000  out of 91074
+62500  out of 91074
+63000  out of 91074
+63500  out of 91074
+64000  out of 91074
+64500  out of 91074
+65000  out of 91074
+65500  out of 91074
+66000  out of 91074
+66500  out of 91074
+67000  out of 91074
+67500  out of 91074
+68000  out of 91074
+68500  out of 91074
+69000  out of 91074
+69500  out of 91074
+70000  out of 91074
+70500  out of 91074
+71000  out of 91074
+71500  out of 91074
+72000  out of 91074
+72500  out of 91074
+73000  out of 91074
+73500  out of 91074
+74000  out of 91074
+74500  out of 91074
+75000  out of 91074
+75500  out of 91074
+76000  out of 91074
+76500  out of 91074
+77000  out of 91074
+77500  out of 91074
+78000  out of 91074
+78500  out of 91074
+79000  out of 91074
+79500  out of 91074
+80000  out of 91074
+80500  out of 91074
+81000  out of 91074
+81500  out of 91074
+82000  out of 91074
+82500  out of 91074
+83000  out of 91074
+83500  out of 91074
+84000  out of 91074
+84500  out of 91074
+85000  out of 91074
+85500  out of 91074
+86000  out of 91074
+86500  out of 91074
+87000  out of 91074
+87500  out of 91074
+88000  out of 91074
+88500  out of 91074
+89000  out of 91074
+89500  out of 91074
+90000  out of 91074
+90500  out of 91074
+91000  out of 91074
+Recasting up df2
+Done
+Defining the lookup dataframe
+Done
+Defining the values dataframe
+Done
+Saving
+Done
