@@ -72,11 +72,6 @@ nohup: ignoring input
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yeq_flt.fits 0.471968692904
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ygq_flt.fits 0.606488047397
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yiq_flt.fits 0.275159922519
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ykq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ymq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yoq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yqq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ysq_flt.fits 0.0
 ATODGNA =        2.3399999E+00 / calibrated gain for amplifier A                ATODGNB =        2.3699999E+00 / calibrated gain for amplifier B                ATODGNC =        2.3099999E+00 / calibrated gain for amplifier C                ATODGND =        2.3800001E+00 / calibrated gain for amplifier D                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y7q_flt.fits to the datacube
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y8q_flt.fits to the datacube
@@ -85,16 +80,6 @@ Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_per
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yeq_flt.fits to the datacube
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ygq_flt.fits to the datacube
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yiq_flt.fits to the datacube
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ykq_flt.fits to the datacube
-iref$xag19297i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ymq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yoq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yqq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ysq_flt.fits to the datacube
-iref$xag19295i_drk.fits
 Done1
 Done2
 Done3
@@ -108,9 +93,10 @@ Done10
 Done11
 Done12
 Done13
-Pers_in_visit.py:547: RuntimeWarning: invalid value encountered in less
+Doing:  _sig02.20_ri06.00_ro15.00
+Pers_in_visit.py:546: RuntimeWarning: invalid value encountered in less
   mask_sky_contam = (mosaic[1].data <msky_d+1*ssky_d) & (mosaic[1].data >msky_d-2*ssky_d) & drz_finite
-Pers_in_visit.py:547: RuntimeWarning: invalid value encountered in greater
+Pers_in_visit.py:546: RuntimeWarning: invalid value encountered in greater
   mask_sky_contam = (mosaic[1].data <msky_d+1*ssky_d) & (mosaic[1].data >msky_d-2*ssky_d) & drz_finite
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y7q_flt.fits
@@ -134,12 +120,7 @@ Pixels with ramps extending for at least 5  exposures: 18276
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 6  exposures: 15684
-Pixels with ramps extending for at least 7  exposures: 15684
-Pixels with ramps extending for at least 8  exposures: 15684
-Pixels with ramps extending for at least 9  exposures: 15684
-Pixels with ramps extending for at least 10  exposures: 15684
-Pixels with ramps extending for at least 11  exposures: 15684
-Number of entries:  3446808
+Number of entries:  2317560
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01y8q_flt.fits
 Pixels with potentially right stimuli: 198156
@@ -159,12 +140,7 @@ Pixels with ramps extending for at least 4  exposures: 14891
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 5  exposures: 12763
-Pixels with ramps extending for at least 6  exposures: 12763
-Pixels with ramps extending for at least 7  exposures: 12763
-Pixels with ramps extending for at least 8  exposures: 12763
-Pixels with ramps extending for at least 9  exposures: 12763
-Pixels with ramps extending for at least 10  exposures: 12763
-Number of entries:  2283546
+Number of entries:  1364610
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yaq_flt.fits
 Pixels with potentially right stimuli: 200002
@@ -181,12 +157,7 @@ Pixels with ramps extending for at least 3  exposures: 15117
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 4  exposures: 12961
-Pixels with ramps extending for at least 5  exposures: 12961
-Pixels with ramps extending for at least 6  exposures: 12961
-Pixels with ramps extending for at least 7  exposures: 12961
-Pixels with ramps extending for at least 8  exposures: 12961
-Pixels with ramps extending for at least 9  exposures: 12961
-Number of entries:  1945887
+Number of entries:  1012695
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ycq_flt.fits
 Pixels with potentially right stimuli: 199232
@@ -200,12 +171,7 @@ Pixels with ramps extending for at least 2  exposures: 15434
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 3  exposures: 12981
-Pixels with ramps extending for at least 4  exposures: 12981
-Pixels with ramps extending for at least 5  exposures: 12981
-Pixels with ramps extending for at least 6  exposures: 12981
-Pixels with ramps extending for at least 7  exposures: 12981
-Pixels with ramps extending for at least 8  exposures: 12981
-Number of entries:  1637502
+Number of entries:  702870
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yeq_flt.fits
 Pixels with potentially right stimuli: 196957
@@ -216,12 +182,7 @@ Pixels with ramps extending for at least 1  exposures: 15438
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 2  exposures: 12805
-Pixels with ramps extending for at least 3  exposures: 12805
-Pixels with ramps extending for at least 4  exposures: 12805
-Pixels with ramps extending for at least 5  exposures: 12805
-Pixels with ramps extending for at least 6  exposures: 12805
-Pixels with ramps extending for at least 7  exposures: 12805
-Number of entries:  1345605
+Number of entries:  423645
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ygq_flt.fits
 Pixels with potentially right stimuli: 194139
@@ -229,33 +190,9 @@ Pixels with really right stimuli: 33987
 Mean 6197.65
 Stdv 3333.04
 Pixels with ramps extending for at least 1  exposures: 13257
-Pixels with ramps extending for at least 2  exposures: 13257
-Pixels with ramps extending for at least 3  exposures: 13257
-Pixels with ramps extending for at least 4  exposures: 13257
-Pixels with ramps extending for at least 5  exposures: 13257
-Pixels with ramps extending for at least 6  exposures: 13257
-Number of entries:  1153359
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yiq_flt.fits
-Pixels with potentially right stimuli: 191993
-Pixels with really right stimuli: 30299
-Pixels with ramps extending for at least 1  exposures: 30299
-Pixels with ramps extending for at least 2  exposures: 30299
-Pixels with ramps extending for at least 3  exposures: 30299
-Pixels with ramps extending for at least 4  exposures: 30299
-Pixels with ramps extending for at least 5  exposures: 30299
-Number of entries:  2181528
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ykq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01ymq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yoq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit01/icrr01yqq_flt.fits
-sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
-Number of points: 13994235
-Number of unique ramps: 164644
+Number of entries:  198855
+Number of points: 6020235
+Number of unique ramps: 134345
 0
 1000
 2000
@@ -391,33 +328,4 @@ Number of unique ramps: 164644
 132000
 133000
 134000
-135000
-136000
-137000
-138000
-139000
-140000
-141000
-142000
-143000
-144000
-145000
-146000
-147000
-148000
-149000
-150000
-151000
-152000
-153000
-154000
-155000
-156000
-157000
-158000
-159000
-160000
-161000
-162000
-163000
-164000
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.

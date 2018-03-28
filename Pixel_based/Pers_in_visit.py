@@ -1,13 +1,12 @@
 
 # coding: utf-8
 
-# # Notebook to study short term persistence from multiple exposures in a single visit 
-# 
 
-# In[ ]:
+# In[1]:
 
 from astropy.io import fits
-import glob, os, shutil, pickle, bz2, gc
+import glob, os, shutil, pickle, bz2, gc, sys
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy.stats import sigmaclip
@@ -20,7 +19,7 @@ from multiprocessing import Pool
 from crds import bestrefs
 
 
-# In[ ]:
+# In[3]:
 
 # The project dir 
 pdir = '/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence/'
@@ -31,122 +30,13 @@ mdir = pdir+'/Mosaic_hi_res_folder/'
 #The dir to save/load the Persistence curves dataframes
 sdir = pdir+'/PD_dataframes_dir/'
 
-
-# In[ ]:
+# In[4]:
 
 # conversion factor from days to seconds
 daytosec = 24.*3600.
 
 
-# In[ ]:
-
-#Single and double exponential models to be fitted to the data
-
-def decay1(t,a1,t1):
-    e1 = a1*np.exp(-t/t1)
-    return e1
-
-def intdec1(t,a1,t1):
-    tu = t[1:]
-    td = t[:-1]
-    k  = -a1*t1
-    return k*(np.exp(-tu/t1)-np.exp(-td/t1))/(tu-td)
-    
-def decay2(t,a1,t1,a2,t2):
-    e1 = a1*np.exp(-t/t1)
-    e2 = a2*np.exp(-t/t2)
-    return e1+e2
-
-def intdec2(t,a1,t1,a2,t2):
-    tu = t[1:]
-    td = t[:-1]
-    k1,k2  = -a1*t1, - a2*t2
-    
-    return k1*(np.exp(-tu/t1)-np.exp(-td/t1))/(tu-td) + k2*(np.exp(-tu/t2)-np.exp(-td/t2))/(tu-td)
-
-#Single exponential models plus a constant
-
-def intdec1_plusconst(t,a1,t1,q):
-    tu = t[1:]
-    td = t[:-1]
-    k  = -a1*t1
-    return k*(np.exp(-tu/t1)-np.exp(-td/t1))/(tu-td) +q
-
-def dec1_plusconst(t,a1,t1,q):
-    e1 = a1*np.exp(-t/t1)
-    return e1+q
-
-
-#Shifted power law model
-
-def shpwl(t,t0,A,index):
-    return A * ((t+t0)/1000)**index
-
-def intshpwl(t,t0,A,index):
-    tu = t[1:]
-    td = t[:-1]
-
-    if (index == -1.):
-        return A*np.log( (tu+t0)/(td+t0) )
-    else:
-        return A/(1+index) * ( ((tu+t0)/1000)**(1+index) - ((td+t0)/1000)**(1+index) )/(tu-td)
-    
-    
-#Schechter like model
-
-def schechter(t,phi,alpha,tstar):
-    x = t/tstar
-    return phi*(x**alpha)*np.exp(-x)
-
-def intschechter(t,phi,alpha,tstar):
-    x = t/tstar
-
-    tu = x[1:]
-    td = x[:-1]
-
-    g1 = gammaincc(alpha+1,td)
-    g2 = gammaincc(alpha+1,tu)
-    
-    diff = gamma(alpha+1)*(g1-g2)
-    
-    return phi*diff
-
-
-#Geometric median calculation function
-
-from scipy.spatial.distance import cdist, euclidean
-
-def geometric_median(X, eps=1e-5):
-    y = np.mean(X, 0)
-
-    while True:
-        D = cdist(X, [y])
-        nonzeros = (D != 0)[:, 0]
-
-        Dinv = 1 / D[nonzeros]
-        Dinvs = np.sum(Dinv)
-        W = Dinv / Dinvs
-        T = np.sum(W * X[nonzeros], 0)
-
-        num_zeros = len(X) - np.sum(nonzeros)
-        if num_zeros == 0:
-            y1 = T
-        elif num_zeros == len(X):
-            return y
-        else:
-            R = (T - y) * Dinvs
-            r = np.linalg.norm(R)
-            rinv = 0 if r == 0 else num_zeros/r
-            y1 = max(0, 1-rinv)*T + min(1, rinv)*y
-
-        if euclidean(y, y1) < eps:
-            return y1, D
-
-        y = y1
-
-
-
-# In[ ]:
+# In[6]:
 
 # Define a function that takes the vsflts list, the current flt that is being used as stimulus
 # and looks for all the pixels with valid stimulus values AND that have valid ramps (i.e. no source, only sky)
@@ -173,12 +63,12 @@ def find_ramps(istim,flts,lev_u,lev_d,lb=None,PAM=None,psf=0.1):
         st = 0
     
     for i in range(st,istim,1):
-        persdata = flts[i,:,:] * (tendMJDs[i]-tstrMJDs[i])*daytosec 
+        earlierdata = flts[i,:,:] * (tendMJDs[i]-tstrMJDs[i])*daytosec 
         if PAM is not None:
-            persdata *= PAM
+            earlierdata *= PAM
 
         if (imtyps[i] == 'EXT'):
-            istimgood = istimgood & (persdata < psf*stimdata) 
+            istimgood = istimgood & (earlierdata < psf*stimdata) 
             
     print('Pixels with really right stimuli:',np.sum(istimgood) )
     
@@ -192,9 +82,15 @@ def find_ramps(istim,flts,lev_u,lev_d,lb=None,PAM=None,psf=0.1):
             persdata *= PAM
     
         if (imtyps[i] == 'EXT'):
-            msky = np.nanmean(sigmaclip(persdata,2.,2.)[0])
-            ssky = np.nanstd(sigmaclip(persdata,2.,2.)[0])
-            iskycurr = (persdata <msky+2*ssky) & (persdata >msky-2*ssky)    
+            pfinite = persdata[np.isfinite(persdata)]
+            msky = np.nanmean(sigmaclip(pfinite,2.5,2.5)[0])
+            ssky = np.nanstd(sigmaclip(pfinite,2.5,2.5)[0])
+            print('Mean',msky)
+            print('Stdv',ssky)
+            
+            iskycurr = (persdata <msky+3.*ssky) & (persdata >msky-2*ssky)   
+#            iskycurr = (persdata < (25*(tendMJDs[istim]-tstrMJDs[istim])*daytosec)) & (persdata >(5*(tendMJDs[istim]-tstrMJDs[istim])*daytosec) ) 
+#            print(msky,ssky)
         elif (imtyps[i] == 'DARK'):
             iskycurr = np.ones_like(persdata,dtype=np.bool_)
         else:
@@ -213,11 +109,11 @@ def find_ramps(istim,flts,lev_u,lev_d,lb=None,PAM=None,psf=0.1):
     return icount
 
 
-# In[ ]:
+# In[7]:
 
 # Dedfine a function to get the sky value in the cureent flt pixel, but measured form the AD mosaic
 
-def getskyfrommosaic(wcsAD, wcsFLT, x, y, dxgrid, dygrid, skyrad_o,skyrad_i,mask_sky_contam,mosaic):
+def getskyfrommosaic(wcsAD, wcsFLT, x, y, dxgrid, dygrid,mask_sky_contam,mosaic):
 
     coords = wcsAD.all_world2pix(wcsFLT.all_pix2world(np.array([[x,y]],dtype=np.float_),0),0) 
     dx = coords[0,0]
@@ -226,23 +122,24 @@ def getskyfrommosaic(wcsAD, wcsFLT, x, y, dxgrid, dygrid, skyrad_o,skyrad_i,mask
     dst = np.sqrt((dxgrid-dx)**2 + (dygrid-dy)**2)
     msk = (dst<skyrad_o) & (dst > skyrad_i) & mask_sky_contam 
     skyarr = mosaic[1].data[msk]
-    cskyarr,l,u = sigmaclip(skyarr,2.,2.)
+    cskyarr,l,u = sigmaclip(skyarr[np.isfinite(skyarr)],2.5,2.5)
     return np.nanmean(cskyarr)
 
-# Similar but for getting background values from the smae image
+# Similar but for getting background values from the same image
 
-def getlocalbackground (x, y, xgrid, ygrid, skyrad_o,skyrad_i, fltdata):
+def getlocalbackground (x, y, xgrid, ygrid, image):
 
     dst = np.sqrt((xgrid-x)**2 + (ygrid-y)**2)
     msk = (dst<skyrad_o) & (dst > skyrad_i)
-    skyarr = fltdata[msk]
-    cskyarr,l,u = sigmaclip(skyarr,2.,2.)
+    skyarr = image[msk]
+    cskyarr,l,u = sigmaclip(skyarr[np.isfinite(skyarr)],scsky,scsky)
     return np.nanmean(cskyarr)
 
+#msky = np.median(sigmaclip(meancurr_ima,1.75,1.75)[0])
 #def get_dark_rate(x, y, istim, j)
 
 
-# In[ ]:
+# In[8]:
 
 def get_sky_and_indices(nz0, nz1, j, istim):
     # Function to get the sky value, as well as calculate the indices needed in the large data cube of IMA reads
@@ -251,15 +148,15 @@ def get_sky_and_indices(nz0, nz1, j, istim):
     imtyp = imtyps[istim+j]
 
     if(imtyp == 'EXT'):
-        skyhere = getskyfrommosaic(w_mosaic, w_vsflts[istim+j], nz1, nz0, dxgrid, dygrid, skyrad_o,skyrad_i,mask_sky_contam,mosaic)
-#        skyhere = getlocalbackground(nz1, nz0, xgrid, ygrid, skyrad_o,skyrad_i, flts[istim+j,:,:])
+#        skyhere = getskyfrommosaic(w_mosaic, w_vsflts[istim+j], nz1, nz0, dxgrid, dygrid, mask_sky_contam,mosaic)
+        skyhere = getlocalbackground(nz1, nz0, xgrid, ygrid, flts[istim+j,:,:])
     elif(imtyp == 'DARK'):
-        skyhere = 0.0 #Do not subtract any sky, as superdark is subtracted from IMA already
+        skyhere = 0.0 #Do not subtract any sky, as the superdark is subtracted from IMA already
     else:
         print('Wrong image type')
         assert False
     
-    offset = ( tstrMJDs[istim+j] - tendMJDs[istim])*daytosec
+    offset = ( tstrMJDs[istim+j] - tendMJDs[istim] )*daytosec
     ioff = np.sum(nsamps[0:istim+j])
     nsamp = nsamps[istim+j]
     
@@ -267,7 +164,7 @@ def get_sky_and_indices(nz0, nz1, j, istim):
     return list(k_product)
 
 
-# In[ ]:
+# In[9]:
 
 def get_pixel_values(inputs, istim, PAM=None):
     # function to extract the values from the IMA cube and IMA metadata arrays
@@ -287,9 +184,9 @@ def get_pixel_values(inputs, istim, PAM=None):
         assert False
     
     if ((PAM is not None) & (imtyps[istim+j] == 'EXT')):
-        meancurr = (meancurr-skyhere)*PAM[nz1,nz0]
-        stdvcurr *= PAM[nz1,nz0]
-        
+        meancurr = (meancurr-skyhere)*pflats[pflats_names[istim+j]][nz1,nz0]
+        stdvcurr *= pflats[pflats_names[istim+j]][nz1,nz0]
+    
     exptime = (tendMJDs[istim]-tstrMJDs[istim])*daytosec
     return [flts[istim,nz1,nz0]*exptime,
             exptime,
@@ -310,7 +207,7 @@ def get_pixel_values(inputs, istim, PAM=None):
            ]
 
 
-# In[ ]:
+# In[10]:
 
 #Read files header, make sure they are sorted by EXPSTART
 #This now copies the files into the mosaic hi res directory, keeping visit structure
@@ -353,15 +250,27 @@ vsflts = sflts[visit_index]
 
 # If in a hurry, shorten the list for faster analysis
 
-#vsflts = vsflts[0:7]
+#vsflts = vsflts[0:len(vsflts)-16]
 
+# If doing darks only (visit0 has 7 ext, visit1 has 5, visit2 has 3):
+# Just keep the 2 last ext, the last one is the useful one, the second last is needed to exclude that the pixel
+# had previous large stimuli
+
+startflt = 5 - visit_index*2  
+vsflts = vsflts[startflt:]
+        
+# Read the mosaic file
+
+mosaic = fits.open(mdir+'/F140W_Mosaic_WFC3_IR_drz.fits')
+
+
+# In[ ]:
 
 # Create the wcs objects for the AD mosaic and flts 
 # For the external flts use the wcs info in the AD 4th extension to update
 # A WCS object created from the QL flts. This is needed because the WCS header of the flts copyied from QL
 # may not have the up-to-date WCS that have been updated by TWREG/AD to prodcue the mosaic
 
-mosaic = fits.open(mdir+'/F140W_Mosaic_WFC3_IR_drz.fits')
 flt2mosaic = list(mosaic[4].data['FILENAME']) #List of ALL the flts that contribute to the AD mosaic
 w_mosaic = WCS(mosaic[1].header)
 
@@ -389,13 +298,52 @@ for vsflt in vsflts:
         w_vsflts.append(w)
 
 
+# In[ ]:
+
 # Read in the pixel-area map
 
 PAM = fits.getdata(pdir+'/Pixel_based/ir_wfc3_map.fits')
 
 
+#Get the flt files to de-flatten the processed IMAs
+
+def get_flat(ext_file):
+    flatfile = fits.getval(ext_file,'PFLTFILE').replace('iref$','/grp/hst/cdbs/iref/')
+    return flatfile
+
+pflats_names = []
+for flt in vsflts:
+    if fits.getheader(flt)['IMAGETYP'] == 'EXT':
+        pflats_names.append(get_flat(flt))
+    else:
+        pflats_names.append(None)
+        
+
+pflats_unique = []
+for i in pflats_names:
+    if i is not(None):
+        if i not in pflats_unique:
+            pflats_unique.append(i)
+
+pflats = {}           
+for f in pflats_unique:
+    pflats[f] = fits.open(f)[1].data[5:-5,5:-5]
+    
+
+
+
+# In[ ]:
+
+#lowlim, bs = 0., 0.2
+
+DRZdt = mosaic[1].data
+DRZ_avg_sky = np.nanmean(sigmaclip(DRZdt[np.isfinite(DRZdt)],2.5,2.5)[0])
+
+# In[ ]:
+
 #From the current AD mosaic, get the sky values offsets that need to be used in the flts
 
+flt2mosaic = list(mosaic[4].data['FILENAME']) #List of ALL the flts that contribute to the AD mosaic
 MDRIZSKYs = []
 
 for vsflt in vsflts:
@@ -435,6 +383,23 @@ def get_superdark_plane(darkfile, nsamp):
 
 # In[ ]:
 
+#In order to match the image coordinates with the astropy convention,
+#the first coordinate in the following numpy array is the y, the second the x 
+
+gn_im = np.ones([1014,1014])
+
+hd = fits.open(vsflts[0])
+
+gn_im[0:507,0:507] = hd[0].header['ATODGNA'] #2.252  #q1
+gn_im[507:,0:507]  = hd[0].header['ATODGNB'] #2.203  #q2
+gn_im[507:,507:]   = hd[0].header['ATODGNC'] #2.188  #q3
+gn_im[0:507,507:]  = hd[0].header['ATODGND'] #2.265  #q4
+
+print(fits.open(vsflts[0])[0].header['*TODGN*'])
+
+
+# In[ ]:
+
 # Create the numpy arrays containg the ima and flt data as well
 # as the arrays of metadata.
 # Also subtract the MDRIZSKY from the flt for a 1-to-1 comaprison with the AD mosaic
@@ -445,13 +410,20 @@ ima_scis  = []
 ima_errs  = []
 ima_dqs   = []
 ima_times = [] 
+ima_avg_sky  = []
+
 flts      = []
 flts_dqs  = []
+flts_avg_sky  = []
+
+
 tendMJDs  = []
 tstrMJDs  = []
 imtyps    = []
 nsamps    = []
 sampseqs  = []
+
+ima_offset = 0
 
 for vsflt,MDS in zip(vsflts,MDRIZSKYs):
     print('Appending '+vsflt+' to the datacube')
@@ -481,11 +453,12 @@ for vsflt,MDS in zip(vsflts,MDRIZSKYs):
     for k in range(nsamps[-1]):
         if (ima['SCI',k+1].header['BUNIT'] == 'COUNTS/S' and (hdr['IMAGETYP'] == 'DARK')):
             dark_sub_ima = ima['SCI',k+1].data-superdark_planes[k]
-            imas = dark_sub_ima[5:-5,5:-5]*ima[0].header['CCDGAIN']
-            imae = ima['ERR',k+1].data[5:-5,5:-5]*ima[0].header['CCDGAIN']
+            imas = dark_sub_ima[5:-5,5:-5]*gn_im
+            imae = ima['ERR',k+1].data[5:-5,5:-5]*gn_im
+
         elif (ima['SCI',k+1].header['BUNIT'] == 'COUNTS/S'):
-            imas = ima['SCI',k+1].data[5:-5,5:-5]*ima[0].header['CCDGAIN']
-            imae = ima['ERR',k+1].data[5:-5,5:-5]*ima[0].header['CCDGAIN']
+            imas = ima['SCI',k+1].data[5:-5,5:-5]*gn_im
+            imae = ima['ERR',k+1].data[5:-5,5:-5]*gn_im
             
         elif (ima['SCI',k+1].header['BUNIT'] == 'ELECTRONS/S'):
             imas = ima['SCI',k+1].data[5:-5,5:-5]
@@ -493,17 +466,37 @@ for vsflt,MDS in zip(vsflts,MDRIZSKYs):
         else:
             print('BUNITS not supported')
             assert False
-            
+                
         ima_scis.append(imas)
         ima_errs.append(imae)
         ima_dqs.append(ima['DQ',k+1].data[5:-5,5:-5])
         ima_times.append(ima['TIME',k+1].header['PIXVALUE'])
-   
+
+#Avergae sky computation
+    if (hdr['IMAGETYP'] == 'EXT'):
+        afs = np.nanmean(sigmaclip(fdt[np.isfinite(fdt)],2.5,2.5)[0])
+        flts_avg_sky.append(afs)
+    else:
+        flts_avg_sky.append(0.)
     
+    
+    for k in range(nsamps[-1]):    
+        if (hdr['IMAGETYP'] == 'EXT'):
+            if k == (nsamps[-1] - 1):
+                ima_avg_sky.append(0.)
+            else:
+                meancurr_ima = (ima_scis[ima_offset+k]*ima_times[ima_offset+k] - ima_scis[ima_offset+k+1]*ima_times[ima_offset+k+1])/(ima_times[ima_offset+k] - ima_times[ima_offset+k+1])
+                ais = np.nanmean(sigmaclip(meancurr_ima[np.isfinite(meancurr_ima)],2.5,2.5)[0])
+                ima_avg_sky.append(ais)
+        else:
+            ima_avg_sky.append(0.)
+        
+    ima_offset += nsamps[-1]
+
     tendMJDs.append(flt[0].header['EXPEND'])
     tstrMJDs.append(flt[0].header['EXPSTART'])
     imtyps.append(flt[0].header['IMAGETYP'])
-    flts.append(fdt - MDS)
+    flts.append(fdt)
     flts_dqs.append(flt['DQ'].data)
     
     flt.close()
@@ -523,14 +516,18 @@ flts      = np.asarray(flts)
 print('Done6')
 flts_dqs = np.asarray(flts_dqs)
 print('Done7')
-tendMJDs  = np.asarray(tendMJDs)
+flts_avg_sky =  np.asarray(flts_avg_sky)
 print('Done8')
-tstrMJDs  = np.asarray(tstrMJDs)
+tendMJDs  = np.asarray(tendMJDs)
 print('Done9')
-imtyps    = np.asarray(imtyps)
+tstrMJDs  = np.asarray(tstrMJDs)
 print('Done10')
-nsamps    = np.asarray(nsamps)
+imtyps    = np.asarray(imtyps)
 print('Done11')
+nsamps    = np.asarray(nsamps)
+print('Done12')
+ima_avg_sky   = np.asarray(ima_avg_sky)
+print('Done13')
 
 
 # In[ ]:
@@ -538,24 +535,30 @@ print('Done11')
 #Define the stimuli e-/s level to identify the ramps
 
 lev_u = np.inf
-lev_d = 4e4
+lev_d = 1e4
 
 # Define the pixel grid (to trasform indices in x,y positions)
 xgrid,ygrid = np.meshgrid( np.arange(fits.getdata(vsflts[0],1).shape[1]) ,np.arange(fits.getdata(vsflts[0],1).shape[0]))
 dxgrid,dygrid = np.meshgrid( np.arange(mosaic[1].data.shape[1]) ,np.arange(mosaic[1].data.shape[0]))
 
-drz_fin = np.isfinite(mosaic[1].data)
+drz_finite = np.isfinite(mosaic[1].data)
 
-msky_d = np.nanmean(sigmaclip(mosaic[1].data[drz_fin],2.,2.)[0])
-ssky_d = np.nanstd(sigmaclip(mosaic[1].data[drz_fin],2.,2.)[0])
-mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
+msky_d = np.nanmean(sigmaclip(mosaic[1].data[drz_finite],2.5,2.5)[0])
+ssky_d = np.nanstd(sigmaclip(mosaic[1].data[drz_finite],2.5,2.5)[0])
+mask_sky_contam = (mosaic[1].data <msky_d+1*ssky_d) & (mosaic[1].data >msky_d-2*ssky_d) & drz_finite
 
-skyrad_o = 12
-skyrad_i = 3
+scsky = 2.1
+skyrad_o = 15
+skyrad_i = 6
 lookback = None
 psf = 0.2
-numcores = 8
+numcores = 12
 
+#namesuff = '_sig'+'{:05.2f}'.format(scsky) + '_ri' + '{:05.2f}'.format(skyrad_i) + '_ro' + '{:05.2f}'.format(skyrad_o)
+namesuff = '_dark_only'
+
+print('Doing: ',namesuff)
+sys.stdout.flush()
 
 # In[ ]:
 
@@ -572,7 +575,8 @@ for istim,stim in enumerate(vsflts[:-1]):
 
     print('**********************')
     print('Doing: ',stim)
-
+    sys.stdout.flush()
+    
     if imtyps[istim] == 'EXT':
     
         icount    = find_ramps(istim,flts,lev_u,lev_d,lb=lookback,PAM=PAM,psf=psf)
@@ -603,25 +607,31 @@ for istim,stim in enumerate(vsflts[:-1]):
  
 
 
+# In[ ]:
+
+df.head()
+
+
+# In[ ]:
 
 # Rearrange the dataframe to save only non-redundant info
 
-print('Creating df2')
 df2 = df.set_index(['xpix', 'ypix','Ind_stim','Stim','EXPTIME_stim','Stim_type','DQ_stim'])
-print('Done')
+df2.head()
 
 
+# In[ ]:
 
 iuniq  = df2.index.unique()
 df2['Uniq_multiindex'] = np.empty(len(df2),dtype=np.int_)
 
-nuniq = len(iuniq)
 print('Number of points:',len(df))
-print('Number of unique ramps:', nuniq)
+print('Number of unique ramps:',len(iuniq))
 
 for i,ind in enumerate(iuniq):
-    if (i%500 == 0):
-        print(i,' out of', nuniq)
+    if (i%1000 == 0):
+        print(i)
+        sys.stdout.flush()
     df2.loc[ind,'Uniq_multiindex'] = i
 
 
@@ -629,42 +639,46 @@ for i,ind in enumerate(iuniq):
 
 #Make sure that the data types are set to more space-efficient ones
 
-print('Recasting up df2')
 df2['Ind_pers'] = df2['Ind_pers'].astype(np.uint8)
 df2['Read index'] = df2['Read index'].astype(np.uint8)
 df2['NSAMP'] = df2['NSAMP'].astype(np.uint8)
 df2[['tfromstim','deltat','meancurr','stdvcurr']] = df2[['tfromstim','deltat','meancurr','stdvcurr']].astype(np.float32)
 df2['Uniq_multiindex'] = df2['Uniq_multiindex'].astype(np.uint32)
-print('Done')
+
 
 # In[ ]:
 
 # The dataframe mapping the uniqe ramps indices
-print('Defining the lookup dataframe')
 df_lookup = df2[['Uniq_multiindex']].copy().drop_duplicates()
-print('Done')
+df_lookup.head()
+
 
 # In[ ]:
 
 # The dataframe with persistence values
 
-print('Defining the values dataframe')
 df_values=pd.DataFrame()
-df_values['tfromstim']       = df2['tfromstim'].values
-df_values['deltat']          = df2['deltat'].values
-df_values['Read index']      = df2['Read index'].values
-df_values['meancurr']        = df2['meancurr'].values
-df_values['stdvcurr']        = df2['stdvcurr'].values
-df_values['NSAMP']           = df2['NSAMP'].values
-df_values['Ind_pers']        = df2['Ind_pers'].values
+df_values['tfromstim']       = df2['tfromstim'].values 
+df_values['deltat']          = df2['deltat'].values 
+df_values['Read index']      = df2['Read index'].values 
+df_values['meancurr']        = df2['meancurr'].values 
+df_values['stdvcurr']        = df2['stdvcurr'].values 
+df_values['NSAMP']           = df2['NSAMP'].values 
+df_values['Ind_pers']        = df2['Ind_pers'].values 
 df_values['Pers_type']       = df2['Pers_type'].values 
 df_values['DQ_pers']         = df2['DQ_pers'].values 
 df_values['Uniq_multiindex'] = df2['Uniq_multiindex'].values 
-print('Done')
+
+df_values.head()
 
 
-print('Saving')
-df_values.to_hdf(sdir+'DF.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_values', mode='a',format = 't')
-df_lookup.to_hdf(sdir+'DF.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_lookup', mode='a',format = 't')
-print('Done')
+# In[ ]:
+
+df_values.to_hdf(sdir+'DF'+namesuff+'.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_values', mode='a',format = 't')
+df_lookup.to_hdf(sdir+'DF'+namesuff+'.h5', 'Visit'+'{:0>2}'.format(str(visit_index+1))+'_lookup', mode='a',format = 't')
+
+
+# In[ ]:
+
+
 

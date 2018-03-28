@@ -75,17 +75,7 @@ nohup: ignoring input
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02paq_flt.fits 0.0
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pcq_flt.fits 0.0
 /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02peq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pgq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02piq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pkq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pmq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02poq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pqq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02psq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02puq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pwq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pyq_flt.fits 0.0
-/user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02q0q_flt.fits 0.0
+ATODGNA =        2.3399999E+00 / calibrated gain for amplifier A                ATODGNB =        2.3699999E+00 / calibrated gain for amplifier B                ATODGNC =        2.3099999E+00 / calibrated gain for amplifier C                ATODGND =        2.3800001E+00 / calibrated gain for amplifier D                END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02ozq_flt.fits to the datacube
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p0q_flt.fits to the datacube
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p2q_flt.fits to the datacube
@@ -101,28 +91,6 @@ Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_per
 iref$xag19295i_drk.fits
 Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02peq_flt.fits to the datacube
 iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pgq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02piq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pkq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pmq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02poq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pqq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02psq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02puq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pwq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pyq_flt.fits to the datacube
-iref$xag19295i_drk.fits
-Appending /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02q0q_flt.fits to the datacube
-iref$xag19295i_drk.fits
 Done1
 Done2
 Done3
@@ -134,126 +102,92 @@ Done8
 Done9
 Done10
 Done11
-Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in less
-  mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
-Pers_in_visit.py:551: RuntimeWarning: invalid value encountered in greater
-  mask_sky_contam = (mosaic[1].data <msky_d+3*ssky_d) & (mosaic[1].data >msky_d-3*ssky_d) & drz_fin
-sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+Done12
+Done13
+Pers_in_visit.py:547: RuntimeWarning: invalid value encountered in less
+  mask_sky_contam = (mosaic[1].data <msky_d+1*ssky_d) & (mosaic[1].data >msky_d-2*ssky_d) & drz_finite
+Pers_in_visit.py:547: RuntimeWarning: invalid value encountered in greater
+  mask_sky_contam = (mosaic[1].data <msky_d+1*ssky_d) & (mosaic[1].data >msky_d-2*ssky_d) & drz_finite
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02ozq_flt.fits
-Pixels with potentially right stimuli: 252080
-Pixels with really right stimuli: 252080
-Pixels with ramps extending for at least 1  exposures: 21171
-Pixels with ramps extending for at least 2  exposures: 15441
-Pixels with ramps extending for at least 3  exposures: 11807
-Pixels with ramps extending for at least 4  exposures: 9310
-Pixels with ramps extending for at least 5  exposures: 9310
-Pixels with ramps extending for at least 6  exposures: 9310
-Pixels with ramps extending for at least 7  exposures: 9310
-Pixels with ramps extending for at least 8  exposures: 9310
-Pixels with ramps extending for at least 9  exposures: 9310
-Pixels with ramps extending for at least 10  exposures: 9310
-Pixels with ramps extending for at least 11  exposures: 9310
-Pixels with ramps extending for at least 12  exposures: 9310
-Pixels with ramps extending for at least 13  exposures: 9310
-Pixels with ramps extending for at least 14  exposures: 9310
-Pixels with ramps extending for at least 15  exposures: 9310
-Pixels with ramps extending for at least 16  exposures: 9310
-Pixels with ramps extending for at least 17  exposures: 9310
-Pixels with ramps extending for at least 18  exposures: 9310
-Pixels with ramps extending for at least 19  exposures: 9310
-Pixels with ramps extending for at least 20  exposures: 9310
-Number of entries:  2841489
+Pixels with potentially right stimuli: 252475
+Pixels with really right stimuli: 252475
+Mean 9685.07
+Stdv 4864.95
+Pixels with ramps extending for at least 1  exposures: 59150
+Mean 9666.53
+Stdv 4975.82
+Pixels with ramps extending for at least 2  exposures: 47041
+Mean 9633.71
+Stdv 5097.98
+Pixels with ramps extending for at least 3  exposures: 37788
+Mean 9572.38
+Stdv 5051.05
+Pixels with ramps extending for at least 4  exposures: 31118
+Pixels with ramps extending for at least 5  exposures: 31118
+Pixels with ramps extending for at least 6  exposures: 31118
+Pixels with ramps extending for at least 7  exposures: 31118
+Pixels with ramps extending for at least 8  exposures: 31118
+Pixels with ramps extending for at least 9  exposures: 31118
+Number of entries:  4166563
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p0q_flt.fits
-Pixels with potentially right stimuli: 254159
-Pixels with really right stimuli: 66658
-Pixels with ramps extending for at least 1  exposures: 14718
-Pixels with ramps extending for at least 2  exposures: 11218
-Pixels with ramps extending for at least 3  exposures: 8828
-Pixels with ramps extending for at least 4  exposures: 8828
-Pixels with ramps extending for at least 5  exposures: 8828
-Pixels with ramps extending for at least 6  exposures: 8828
-Pixels with ramps extending for at least 7  exposures: 8828
-Pixels with ramps extending for at least 8  exposures: 8828
-Pixels with ramps extending for at least 9  exposures: 8828
-Pixels with ramps extending for at least 10  exposures: 8828
-Pixels with ramps extending for at least 11  exposures: 8828
-Pixels with ramps extending for at least 12  exposures: 8828
-Pixels with ramps extending for at least 13  exposures: 8828
-Pixels with ramps extending for at least 14  exposures: 8828
-Pixels with ramps extending for at least 15  exposures: 8828
-Pixels with ramps extending for at least 16  exposures: 8828
-Pixels with ramps extending for at least 17  exposures: 8828
-Pixels with ramps extending for at least 18  exposures: 8828
-Pixels with ramps extending for at least 19  exposures: 8828
-Number of entries:  2474640
+Pixels with potentially right stimuli: 254746
+Pixels with really right stimuli: 66508
+Mean 9666.53
+Stdv 4975.82
+Pixels with ramps extending for at least 1  exposures: 29000
+Mean 9633.71
+Stdv 5097.98
+Pixels with ramps extending for at least 2  exposures: 24268
+Mean 9572.38
+Stdv 5051.05
+Pixels with ramps extending for at least 3  exposures: 20410
+Pixels with ramps extending for at least 4  exposures: 20410
+Pixels with ramps extending for at least 5  exposures: 20410
+Pixels with ramps extending for at least 6  exposures: 20410
+Pixels with ramps extending for at least 7  exposures: 20410
+Pixels with ramps extending for at least 8  exposures: 20410
+Number of entries:  2279978
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p2q_flt.fits
-Pixels with potentially right stimuli: 255804
-Pixels with really right stimuli: 55545
-Pixels with ramps extending for at least 1  exposures: 12536
-Pixels with ramps extending for at least 2  exposures: 9729
-Pixels with ramps extending for at least 3  exposures: 9729
-Pixels with ramps extending for at least 4  exposures: 9729
-Pixels with ramps extending for at least 5  exposures: 9729
-Pixels with ramps extending for at least 6  exposures: 9729
-Pixels with ramps extending for at least 7  exposures: 9729
-Pixels with ramps extending for at least 8  exposures: 9729
-Pixels with ramps extending for at least 9  exposures: 9729
-Pixels with ramps extending for at least 10  exposures: 9729
-Pixels with ramps extending for at least 11  exposures: 9729
-Pixels with ramps extending for at least 12  exposures: 9729
-Pixels with ramps extending for at least 13  exposures: 9729
-Pixels with ramps extending for at least 14  exposures: 9729
-Pixels with ramps extending for at least 15  exposures: 9729
-Pixels with ramps extending for at least 16  exposures: 9729
-Pixels with ramps extending for at least 17  exposures: 9729
-Pixels with ramps extending for at least 18  exposures: 9729
-Number of entries:  2550688
+Pixels with potentially right stimuli: 256454
+Pixels with really right stimuli: 55381
+Mean 9633.71
+Stdv 5097.98
+Pixels with ramps extending for at least 1  exposures: 24037
+Mean 9572.38
+Stdv 5051.05
+Pixels with ramps extending for at least 2  exposures: 20070
+Pixels with ramps extending for at least 3  exposures: 20070
+Pixels with ramps extending for at least 4  exposures: 20070
+Pixels with ramps extending for at least 5  exposures: 20070
+Pixels with ramps extending for at least 6  exposures: 20070
+Pixels with ramps extending for at least 7  exposures: 20070
+Number of entries:  1930217
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p3q_flt.fits
-Pixels with potentially right stimuli: 256193
-Pixels with really right stimuli: 47555
-Pixels with ramps extending for at least 1  exposures: 10940
-Pixels with ramps extending for at least 2  exposures: 10940
-Pixels with ramps extending for at least 3  exposures: 10940
-Pixels with ramps extending for at least 4  exposures: 10940
-Pixels with ramps extending for at least 5  exposures: 10940
-Pixels with ramps extending for at least 6  exposures: 10940
-Pixels with ramps extending for at least 7  exposures: 10940
-Pixels with ramps extending for at least 8  exposures: 10940
-Pixels with ramps extending for at least 9  exposures: 10940
-Pixels with ramps extending for at least 10  exposures: 10940
-Pixels with ramps extending for at least 11  exposures: 10940
-Pixels with ramps extending for at least 12  exposures: 10940
-Pixels with ramps extending for at least 13  exposures: 10940
-Pixels with ramps extending for at least 14  exposures: 10940
-Pixels with ramps extending for at least 15  exposures: 10940
-Pixels with ramps extending for at least 16  exposures: 10940
-Pixels with ramps extending for at least 17  exposures: 10940
-Number of entries:  2713120
+Pixels with potentially right stimuli: 256882
+Pixels with really right stimuli: 47403
+Mean 9572.38
+Stdv 5051.05
+Pixels with ramps extending for at least 1  exposures: 20251
+Pixels with ramps extending for at least 2  exposures: 20251
+Pixels with ramps extending for at least 3  exposures: 20251
+Pixels with ramps extending for at least 4  exposures: 20251
+Pixels with ramps extending for at least 5  exposures: 20251
+Pixels with ramps extending for at least 6  exposures: 20251
+Number of entries:  1680833
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p5q_flt.fits
-Pixels with potentially right stimuli: 252060
-Pixels with really right stimuli: 40231
-Pixels with ramps extending for at least 1  exposures: 40231
-Pixels with ramps extending for at least 2  exposures: 40231
-Pixels with ramps extending for at least 3  exposures: 40231
-Pixels with ramps extending for at least 4  exposures: 40231
-Pixels with ramps extending for at least 5  exposures: 40231
-Pixels with ramps extending for at least 6  exposures: 40231
-Pixels with ramps extending for at least 7  exposures: 40231
-Pixels with ramps extending for at least 8  exposures: 40231
-Pixels with ramps extending for at least 9  exposures: 40231
-Pixels with ramps extending for at least 10  exposures: 40231
-Pixels with ramps extending for at least 11  exposures: 40231
-Pixels with ramps extending for at least 12  exposures: 40231
-Pixels with ramps extending for at least 13  exposures: 40231
-Pixels with ramps extending for at least 14  exposures: 40231
-Pixels with ramps extending for at least 15  exposures: 40231
-Pixels with ramps extending for at least 16  exposures: 40231
-Number of entries:  9534747
+Pixels with potentially right stimuli: 253024
+Pixels with really right stimuli: 40120
+Pixels with ramps extending for at least 1  exposures: 40120
+Pixels with ramps extending for at least 2  exposures: 40120
+Pixels with ramps extending for at least 3  exposures: 40120
+Pixels with ramps extending for at least 4  exposures: 40120
+Pixels with ramps extending for at least 5  exposures: 40120
+Number of entries:  2888640
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02p6q_flt.fits
 **********************
@@ -262,237 +196,179 @@ Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persi
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02paq_flt.fits
 **********************
 Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pcq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02peq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pgq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02piq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pkq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pmq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02poq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pqq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02psq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02puq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pwq_flt.fits
-**********************
-Doing:  /user/gennaro/Functional_work/WFC3_persistence/py_progs/short_term_persistence//Mosaic_hi_res_folder//Visit02/icrr02pyq_flt.fits
-Creating df2
-Done
-Number of points: 20114684
-Number of unique ramps: 99596
-0  out of 99596
-500  out of 99596
-1000  out of 99596
-1500  out of 99596
-2000  out of 99596
-2500  out of 99596
-3000  out of 99596
-3500  out of 99596
-4000  out of 99596
-4500  out of 99596
-5000  out of 99596
-5500  out of 99596
-6000  out of 99596
-6500  out of 99596
-7000  out of 99596
-7500  out of 99596
-8000  out of 99596
-8500  out of 99596
-9000  out of 99596
-9500  out of 99596
-10000  out of 99596
-10500  out of 99596
-11000  out of 99596
-11500  out of 99596
-12000  out of 99596
-12500  out of 99596
-13000  out of 99596
-13500  out of 99596
-14000  out of 99596
-14500  out of 99596
-15000  out of 99596
-15500  out of 99596
-16000  out of 99596
-16500  out of 99596
-17000  out of 99596
-17500  out of 99596
-18000  out of 99596
-18500  out of 99596
-19000  out of 99596
-19500  out of 99596
-20000  out of 99596
-20500  out of 99596
-21000  out of 99596
-21500  out of 99596
-22000  out of 99596
-22500  out of 99596
-23000  out of 99596
-23500  out of 99596
-24000  out of 99596
-24500  out of 99596
-25000  out of 99596
-25500  out of 99596
-26000  out of 99596
-26500  out of 99596
-27000  out of 99596
-27500  out of 99596
-28000  out of 99596
-28500  out of 99596
-29000  out of 99596
-29500  out of 99596
-30000  out of 99596
-30500  out of 99596
-31000  out of 99596
-31500  out of 99596
-32000  out of 99596
-32500  out of 99596
-33000  out of 99596
-33500  out of 99596
-34000  out of 99596
-34500  out of 99596
-35000  out of 99596
-35500  out of 99596
-36000  out of 99596
-36500  out of 99596
-37000  out of 99596
-37500  out of 99596
-38000  out of 99596
-38500  out of 99596
-39000  out of 99596
-39500  out of 99596
-40000  out of 99596
-40500  out of 99596
-41000  out of 99596
-41500  out of 99596
-42000  out of 99596
-42500  out of 99596
-43000  out of 99596
-43500  out of 99596
-44000  out of 99596
-44500  out of 99596
-45000  out of 99596
-45500  out of 99596
-46000  out of 99596
-46500  out of 99596
-47000  out of 99596
-47500  out of 99596
-48000  out of 99596
-48500  out of 99596
-49000  out of 99596
-49500  out of 99596
-50000  out of 99596
-50500  out of 99596
-51000  out of 99596
-51500  out of 99596
-52000  out of 99596
-52500  out of 99596
-53000  out of 99596
-53500  out of 99596
-54000  out of 99596
-54500  out of 99596
-55000  out of 99596
-55500  out of 99596
-56000  out of 99596
-56500  out of 99596
-57000  out of 99596
-57500  out of 99596
-58000  out of 99596
-58500  out of 99596
-59000  out of 99596
-59500  out of 99596
-60000  out of 99596
-60500  out of 99596
-61000  out of 99596
-61500  out of 99596
-62000  out of 99596
-62500  out of 99596
-63000  out of 99596
-63500  out of 99596
-64000  out of 99596
-64500  out of 99596
-65000  out of 99596
-65500  out of 99596
-66000  out of 99596
-66500  out of 99596
-67000  out of 99596
-67500  out of 99596
-68000  out of 99596
-68500  out of 99596
-69000  out of 99596
-69500  out of 99596
-70000  out of 99596
-70500  out of 99596
-71000  out of 99596
-71500  out of 99596
-72000  out of 99596
-72500  out of 99596
-73000  out of 99596
-73500  out of 99596
-74000  out of 99596
-74500  out of 99596
-75000  out of 99596
-75500  out of 99596
-76000  out of 99596
-76500  out of 99596
-77000  out of 99596
-77500  out of 99596
-78000  out of 99596
-78500  out of 99596
-79000  out of 99596
-79500  out of 99596
-80000  out of 99596
-80500  out of 99596
-81000  out of 99596
-81500  out of 99596
-82000  out of 99596
-82500  out of 99596
-83000  out of 99596
-83500  out of 99596
-84000  out of 99596
-84500  out of 99596
-85000  out of 99596
-85500  out of 99596
-86000  out of 99596
-86500  out of 99596
-87000  out of 99596
-87500  out of 99596
-88000  out of 99596
-88500  out of 99596
-89000  out of 99596
-89500  out of 99596
-90000  out of 99596
-90500  out of 99596
-91000  out of 99596
-91500  out of 99596
-92000  out of 99596
-92500  out of 99596
-93000  out of 99596
-93500  out of 99596
-94000  out of 99596
-94500  out of 99596
-95000  out of 99596
-95500  out of 99596
-96000  out of 99596
-96500  out of 99596
-97000  out of 99596
-97500  out of 99596
-98000  out of 99596
-98500  out of 99596
-99000  out of 99596
-99500  out of 99596
-Recasting up df2
-Done
-Defining the lookup dataframe
-Done
-Defining the values dataframe
-Done
-Saving
-Done
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+Number of points: 12946231
+Number of unique ramps: 172558
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+10000
+11000
+12000
+13000
+14000
+15000
+16000
+17000
+18000
+19000
+20000
+21000
+22000
+23000
+24000
+25000
+26000
+27000
+28000
+29000
+30000
+31000
+32000
+33000
+34000
+35000
+36000
+37000
+38000
+39000
+40000
+41000
+42000
+43000
+44000
+45000
+46000
+47000
+48000
+49000
+50000
+51000
+52000
+53000
+54000
+55000
+56000
+57000
+58000
+59000
+60000
+61000
+62000
+63000
+64000
+65000
+66000
+67000
+68000
+69000
+70000
+71000
+72000
+73000
+74000
+75000
+76000
+77000
+78000
+79000
+80000
+81000
+82000
+83000
+84000
+85000
+86000
+87000
+88000
+89000
+90000
+91000
+92000
+93000
+94000
+95000
+96000
+97000
+98000
+99000
+100000
+101000
+102000
+103000
+104000
+105000
+106000
+107000
+108000
+109000
+110000
+111000
+112000
+113000
+114000
+115000
+116000
+117000
+118000
+119000
+120000
+121000
+122000
+123000
+124000
+125000
+126000
+127000
+128000
+129000
+130000
+131000
+132000
+133000
+134000
+135000
+136000
+137000
+138000
+139000
+140000
+141000
+142000
+143000
+144000
+145000
+146000
+147000
+148000
+149000
+150000
+151000
+152000
+153000
+154000
+155000
+156000
+157000
+158000
+159000
+160000
+161000
+162000
+163000
+164000
+165000
+166000
+167000
+168000
+169000
+170000
+171000
+172000
